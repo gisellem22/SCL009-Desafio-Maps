@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'SCL009-Desafio-Maps'`, () => {
+  it(`should have as title 'Desafio-Maps!'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('SCL009-Desafio-Maps');
+    expect(app.title).toEqual('Desafio-Maps!');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to SCL009-Desafio-Maps!');
+    expect(compiled.querySelector('h1').textContent).toContain('Desafio-Maps!');
   });
 });
