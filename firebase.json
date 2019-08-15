@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/SCL009-Desafio-Maps",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
