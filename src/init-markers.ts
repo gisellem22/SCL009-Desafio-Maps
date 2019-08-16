@@ -1,4 +1,9 @@
-[
+export class Init {
+  load(){
+    if(localStorage.getItem('markers') === null || localStorage.getItem('markers') === undefined){
+      console.log('No se encontraron marcadores');
+      
+    let markers = [
     {
       "Name": "Red Barn Stores 3858-CUAJIMALPA",
       "Address": "JOSE MA. CASTORENA NO. 84  COL. SAN JOSE DE LOS CEDROS, DELEGACION CUAJIMALPA   MEXICO D.F. C.P. 05210",
@@ -2182,5 +2187,14 @@
         "lat": 19.32192,
         "lng": -99.09512
       }
+
+    }];
+
+    localStorage.setItem('markers', JSON.stringify(markers));
+
+    }else {
+     console.log('Cargando marcadores...'); 
     }
-  ]
+
+  }
+}
