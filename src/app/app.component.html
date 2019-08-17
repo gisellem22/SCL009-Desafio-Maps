@@ -1,22 +1,36 @@
-<!-- Style Bootstrap -->
-<nav class="navbar navbar-light bg-light">
+<!-- NavBar Style Bootstrap -->
+<nav class="navbar navbar-light bg-light col-12">
   <img style="float:left" width="70" src="https://i.ibb.co/bW0h0jG/logo.png" alt="g logo">
-  <div style="text-align:center">
+  <div class="title">
     <h1 class="m-2"> {{ title }} </h1>
   </div>
-  
+  <!--Form other options  -->
   <form class="form-inline">
       <!-- <button class="btn btn-sm btn-outline-bg-light" routerLink="/home" routerLinkActive="active" type="button"><h3>Home</h3></button>
       <button class="btn btn-sm bg-light" routerLink="/project" routerLinkActive="active" type="button"><h3>Proyectos</h3></button>
       <button class="btn btn-sm btn-outline-bg-light" routerLink="/about" routerLinkActive="active" type="button"><h3>Nosotros</h3></button> -->
   </form>
 </nav>
-<div style="text-align:center">
-  <!-- <h1 class="mt-5">
-    Welcome to {{ title }}!
-  </h1> -->
-  <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div id="map" class="match-parent col-12 mt-5">
+        <!-- <ul> -->
+          <div id="marker" class="marker" *ngFor="let m of markers" >
+              {{m.lat}}{{m.lng}}
+            <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->
+            <!-- <div *ngFor="let m of markers; let i = index"(click)="onSelect(m, i)"
+              [lat]="m.lat" [lng]="m.lng"[markerDraggable]="m.arrastrable"
+              (click)="onSelect(Markers.Coordinates)">
+              [Coordinates.lat]="item.lat" [Coordinates.long]="item.lng"
+            </div> -->
+                   
+          </div>
+        <!-- </ul> -->
+      </div>
+    </div>
+  </div>
 </div>
-<app-map></app-map>
+
 
 

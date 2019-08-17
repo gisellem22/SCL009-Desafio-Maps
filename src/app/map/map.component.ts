@@ -17,19 +17,6 @@ export class MapComponent implements OnInit {
   lat = 19.42847;
   lng = -99.12766;
 
-  // class marker
-   Name?:string;
-   Address: string;
-   Coordinates: number;
-   Arrastrable: boolean;
-
-  // Markers
-  // markers= type:any;
-  // markers: marker[];
-
-  // constructor(private mapService:MapService){
-  //   this.markers = this.mapService.obtenerMarcadores();
-  //  } 
 
    ngOnInit() {
     (mapboxgl as typeof mapboxgl).accessToken = environment.mapbox.accessToken;
@@ -42,19 +29,6 @@ export class MapComponent implements OnInit {
     // Add map controls
     this.map.addControl(new (mapboxgl as typeof mapboxgl).NavigationControl());
 
-    // Marker
-    // let element = document.createElement('div')
-    // element.className = 'marker'
-    // element.addEventListener('click', ()=>{
-    //   window.alert('diste click!!')
-    // })
-
-    // let marker = new mapboxgl.Marker(element)
-    // .setLngLat({
-    //   lat: 19.42847,
-    //   lng: -99.12766
-    // })
-
-    // .addTo(this.map)
+    
   }
 }
