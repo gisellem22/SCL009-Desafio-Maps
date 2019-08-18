@@ -15,18 +15,18 @@
   <div class="row">
     <div class="col-12">
       <div id="map" class="match-parent col-12 mt-5">
-        <!-- <ul> -->
-          <div id="marker" class="marker" *ngFor="let m of markers" >
-              {{m.lat}}{{m.lng}}
-            <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->
-            <!-- <div *ngFor="let m of markers; let i = index"(click)="onSelect(m, i)"
+          <div #Coordinadas (click)="onChange()" id='coordinates' class='' *ngFor="let m of markers">
+            {{markers}}
+          </div>
+       <!-- <div id="marker" class="marker" *ngFor="let m of markers" (click)="onSelect(m)"> {{m.lat}}{{m.lng}} </div> -->
+             <!-- <ul> -->
+              <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->
+              <!-- <div *ngFor="let m of markers; let i = index"(click)="onSelect(m, i)"
               [lat]="m.lat" [lng]="m.lng"[markerDraggable]="m.arrastrable"
               (click)="onSelect(Markers.Coordinates)">
               [Coordinates.lat]="item.lat" [Coordinates.long]="item.lng"
-            </div> -->
-                   
-          </div>
-        <!-- </ul> -->
+              </div> -->
+          <!-- </ul> -->
       </div>
     </div>
   </div>

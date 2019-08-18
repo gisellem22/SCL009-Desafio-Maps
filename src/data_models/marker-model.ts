@@ -7,3 +7,10 @@ export class Markers {
     lng: any;
     
 }
+
+export interface GeoJSON {
+    type: 'FeatureCollection',
+    features: [{ type: 'Feature',  geometry: { type: 'Point',  coordinates: Coordinates },
+      properties: { title: 'Mapbox', description: 'Mexico' }
+    }]
+}

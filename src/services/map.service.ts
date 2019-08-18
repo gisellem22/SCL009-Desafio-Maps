@@ -18,6 +18,6 @@ export class MapService extends Init {
   
   getMarkers(){
     let markers = JSON.parse(localStorage.getItem('markers'));
-    console.log('Servicio de marcadores leyendo dataJSON: '+ markers);
+    console.log('Servicio de marcadores leyendo JSON: '+ JSON.stringify(markers));
   }
 }
