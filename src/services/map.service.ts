@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 // Class
-import { Init } from '../data_models/init-markers';
+// import { Markers } from 'src/data_models/marker-model';
+// Data
+import { default as Init } from '../data_models/init-markers';
+import { default as markersPoints } from '../data_models/init-markers';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +20,20 @@ export class MapService extends Init {
     this.load();
   }
   
-  getMarkers(){
-    let markers = JSON.parse(localStorage.getItem('markers'));
-    console.log('Servicio de marcadores leyendo JSON: '+ JSON.stringify(markers));
-  }
+  // getMarkers(){
+  //   let markers = JSON.parse(localStorage.getItem('markers'));
+  //   console.log('Servicio de marcadores leyendo JSON: '+ JSON.stringify(markers));
+  // }
+
+ // Function with Observable
+ getData(): Observable<any> {
+  return of(markersPoints);
+}
+
+// Function with Observable
+getMarkers(): Observable<any> {
+  let markers = JSON.parse(localStorage.getItem('markers'));
+  return of(markers);
+}
+
 }

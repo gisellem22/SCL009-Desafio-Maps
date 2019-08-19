@@ -1,13 +1,16 @@
-export class Init {
+import { Markers } from './marker-model';
+
+
+export default class Init {
   load(){
-    if(localStorage.getItem('markers') === null || localStorage.getItem('markers') === undefined){
+    if(localStorage.getItem('markersPoints') === null || localStorage.getItem('markersPoints') === undefined){
       console.log('No se encontraron marcadores');
-      
-    let markers = [
+     
+     
+     const markersPoints: Markers[] = [
     {
       "Name": "Red Barn Stores 3858-CUAJIMALPA",
-      "Address": "JOSE MA. CASTORENA NO. 84  COL. SAN JOSE DE LOS CEDROS, DELEGACION CUAJIMALPA   MEXICO D.F. C.P. 05210",
-      "Arrastrable": true,  
+      "Address": "JOSE MA. CASTORENA NO. 84  COL. SAN JOSE DE LOS CEDROS, DELEGACION CUAJIMALPA   MEXICO D.F. C.P. 05210", 
       "Coordinates": {
         "lat": 39.390897,
         "lng": -99.066067
@@ -16,7 +19,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2344-LOMAS",
       "Address": "BOULEVARD MANUEL AVILA CAMACHO NO. 491 COL. PERIODISTAS C.P.11220",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 40.640771,
         "lng": -74.016133
@@ -25,7 +27,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 1770-PATIO SANTA FE",
       "Address": "AV. PROLONGACIÓN PASEO DE LA REFORMA NO. 400, ENTRE LAS CALLES: AVENIDA VASCO DE QUIROGA  Y DE AVENIDA PASEO DE LA REFORMA, COL. SANTA FE,  DELEGACIÓN ÁLVARO OBREGÓN CP  01210",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 39.390897,
         "lng": -99.066067
@@ -34,7 +35,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2466-CUITLAHUAC",
       "Address": "AV. CUITLÁHUAC NO. 3651 COL. HOGAR Y SEGURIDAD DELEG. AZCAPOTZALCO C.P.02820",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.46961,
         "lng": -99.17176
@@ -43,7 +43,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3862-AZCAPOTZALCO",
       "Address": "AV. NEXTENGO NO. 78 COL. SANTA CRUZ ACAYUCAN , MEXICO D.F. C.P. 02770",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.47704,
         "lng": -99.1927
@@ -52,7 +51,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2347-TLAHUAC",
       "Address": "CALZ. TLÁHUAC NO. 5662  COL. SAN LORENZO TEZONCO  DELEG. TLÁHUAC, MEXICO DF. C.P. 13266",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.30518,
         "lng": -99.0615
@@ -61,7 +59,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2464-MIRAMONTES ",
       "Address": "AV. ESCUELA NAVAL MILITAR # 753 ESQ. AV. CANAL DE MIRAMONTES DELEG. COYOACÁN C.P. 04890",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.31519,
         "lng": -99.12459
@@ -70,7 +67,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2670-TLALPAN",
       "Address": "CALZADA TLALPAN NO. 1037  COL. AMERICAS UNIDAS C.P. 03500 DELEG. BENITO JUÁREZ",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.3801,
         "lng": -99.14036
@@ -79,7 +75,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3857-VILLA COAPA",
       "Address": "AV. CANAL DE MIRAMONTES NO. 3520 COL. SAN BARTOLO COAPA  C.P. 14390, MEXICO, D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.29443,
         "lng": -99.1255
@@ -88,7 +83,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2345-TEPEYAC",
       "Address": "CALZ. DE GUADALUPE NO. 431 COL. GUADALUPE TEPEYAC C.P.07840 DELEG. GUSTAVO A. MADERO",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.47242,
         "lng": -99.12184
@@ -97,7 +91,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3794-ACUEDUCTO DE GUADALUPE",
       "Address": "AV. LUIS ESPINOZA NO.  160 COL. SANTIAGO ATEPETLAC, DELEGACION GUSTAVO A. MADERO MEXICO D.F. C.P. 07200",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 39.390897,
         "lng": -99.066067
@@ -106,7 +99,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3846-BUENAVISTA",
       "Address": "INSURGENTES NORTE NO. 131, COL GUERRERO C.P. 06300   MEXICO, D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.44128,
         "lng": -99.14378
@@ -115,7 +107,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3851-AEROPUERTO",
       "Address": "CALZADA IGNACIO ZARAGOZA NO. 58   COL. FEDERAL  C.P. 15700, MEXICO D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.41938,
         "lng": -99.09469
@@ -124,7 +115,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3872-BALBUENA",
       "Address": "FRAY SERVANDO TERESA DE MIER NO. 881 COL.  JARDIN BALBUENA C.P. 15900, MEXICO D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.41799,
         "lng": -99.10565
@@ -133,7 +123,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3877-TORRES  LINDAVISTA",
       "Address": "MIGUEL OTHON DE MENDIZABAL OTE. 343, COL. NUEVA INDUSTRIAL VALLEJO,  C.P. 07700 MÉXICO, D.F",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.50548,
         "lng": -99.15066
@@ -142,7 +131,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 4547-EDUARDO MOLINA",
       "Address": "CALZADA SAN JUAN DE ARAGÓN NO. 516 COLONIA D.M. NACIONAL DELEGARCIÓN GUSTAVO A. MADERO D.F. C.P. 7090",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 39.390897,
         "lng": -99.066067
@@ -151,7 +139,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2430-COPILCO",
       "Address": "AV. COPILCO NO. 164 COL. OXTOPULCO DEL. COYOACAN C.P. 04318",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.344095,
         "lng": -99.178408
@@ -160,7 +147,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 2689-FELIX CUEVAS",
       "Address": "AV. SAN FRANCISCO NO. 1621 COL. DEL VALLE DEL. BENITO JUÁREZ C.P. 03100",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.38631,
         "lng": -99.17346
@@ -169,7 +155,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3845-UNIVERSIDAD",
       "Address": "AV. UNIVERSIDAD NO. 936-A COL. SANTA CRUZ ATOYAC   C.P. 03310, MEXICO D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.36984,
         "lng": -99.16516
@@ -178,7 +163,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3848-TAXQUEÑA",
       "Address": "MIGUEL A. DE QUEVEDO NO. 175 COL. CHIMALISTAC DELEGACION COYOACAN C.P. 01070, MEXICO D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.34828,
         "lng": -99.18477
@@ -187,7 +171,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3852-PLATEROS",
       "Address": "BLVD. ADOLFO LOPEZ MATEOS NO. 1701 COL. LOMAS DE PLATEROS, DELEG. ALVARO OBREGON C.P. 01460 MEXICO D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 39.390897,
         "lng": -99.066067
@@ -196,7 +179,6 @@ export class Init {
     {
       "Name": "Red Barn Stores 3863-PERIFERICO SUR",
       "Address": "AV. CENTRO COMERCIAL NO. 190 COL. INSURGENTES CUICUILCO C.P. 04530 MEXICO, D.F.",
-      "Arrastrable": true, 
       "Coordinates": {
         "lat": 19.30759,
         "lng": -99.19368
@@ -2212,7 +2194,7 @@ export class Init {
 
     }];
 
-    localStorage.setItem('markers', JSON.stringify(markers));
+    localStorage.setItem('markersPoints', JSON.stringify(markersPoints));
 
     }else {
      console.log('Cargando marcadores...'); 

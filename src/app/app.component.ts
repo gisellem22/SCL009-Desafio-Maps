@@ -28,19 +28,28 @@ export class AppComponent implements OnInit, AfterViewInit{
   lat = 19.42847;
   lng = -99.12766;
 
-  // class marker and element
-  // markers:  Markers[];
+  // class marker, element and others
   element: any;
   coordinates: any;
   markers: any;
-
+  item:any;
+  list: any;  //lista vacía que se llenará con los e seleccionados
+  // a: any;
+  arr: any;
 
   constructor (private mapService: MapService) {
-   let markers = this.mapService.getMarkers();
+     
   } 
-    
+  
+  // Call Observable with Subscribe
+  getMarkers(): void {
+    this.mapService.getMarkers()
+      .subscribe(markers => this.list = markers);
+  }
+
   ngOnInit() {
-    // initializing mapbox with token
+    
+    // Initializing mapbox with token
     (mapboxgl as typeof mapboxgl).accessToken = environment.mapbox.accessToken;
       this.map = new mapboxgl.Map({
         container: 'map',
@@ -52,8 +61,7 @@ export class AppComponent implements OnInit, AfterViewInit{
     // Add map controls
     this.map.addControl(new mapboxgl.NavigationControl());
 
-    // Add first marker
-    // let element = document.createElement('div')
+    // Add first marker in MexiciCity
     let marker = new mapboxgl.Marker(this.element)
     .setLngLat({
       lat: 19.42847,
@@ -61,12 +69,45 @@ export class AppComponent implements OnInit, AfterViewInit{
     })
     .addTo(this.map)
 
-  }
+  }  
     
   ngAfterViewInit(){
-    // First Option
+    //Call service to print markers
+    let list = this.mapService.getMarkers();
+    console.log(list);
+      list.forEach(element => {
+        let item = element;
+        console.log(element);
+        item.forEach(e => {
+          let coordinates = e.Coordinates;  
+          let arr:[number, number] = [coordinates.lng, coordinates.lat]
+          console.log(arr);
+
+          // Option for Markers in map
+          // let popup = new mapboxgl.Popup({closeOnClick: false})
+          let marker = new mapboxgl.Marker({
+            draggable: true
+            
+          })
+          .setLngLat(arr)
+          // .setHTML('<h1>Coordenadas</h1>')
+          .addTo(this.map);
+          
+          function onDragEnd() {
+            let lngLat = this.marker.getLngLat();
+            this.coordinates.style.display = 'block';
+            this.coordinates.innerHTML = 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+          }
+          marker.on('dragend', onDragEnd);  
+
+      });
+    });
+    
+  }
+}
+
+ // // Third Option with anchor
     // this.map.on('load', function () {
- 
     //   this.addLayer({
     //   "id": "points",
     //   "type": "symbol",
@@ -84,17 +125,19 @@ export class AppComponent implements OnInit, AfterViewInit{
     //   "title": "Mapbox DC",
     //   "icon": "harbor"
     //   }
-    //   }, {
-    //   "type": "Feature",
-    //   "geometry": {
-    //   "type": "Point",
-    //   "coordinates": [-122.414, 37.776]
-    //   },
-    //   "properties": {
-    //   "title": "Mapbox SF",
-    //   "icon": "harbor"
-    //   }
-    //   }]
+    //   }, 
+    //   // {
+    //   // "type": "Feature",
+    //   // "geometry": {
+    //   // "type": "Point",
+    //   // "coordinates": [-122.414, 37.776]
+    //   // },
+    //   // "properties": {
+    //   // "title": "Mapbox SF",
+    //   // "icon": "harbor"
+    //   // }
+    //   // }
+    //   ]
     //   }
     //   },
     //   "layout": {
@@ -107,36 +150,36 @@ export class AppComponent implements OnInit, AfterViewInit{
     //   });
     //   });
 
-    // Second Option
-    this.map.on('load', function () {
- 
-      let layers = this.getStyle().layers;
-      // Find the index of the first symbol layer in the map style
-      let firstSymbolId;
-      for (var i = 0; i < layers.length; i++) {
-      if (layers[i].type === 'symbol') {
-      firstSymbolId = layers[i].id;
-      break;
-      }
-      }
-      this.addLayer({
-      'id': 'urban-areas-fill',
-      'type': 'fill',
-      'source': {
-      'type': 'geojson',
-      'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
-      },
-      'layout': {},
-      'paint': {
-      'fill-color': '#f08',
-      'fill-opacity': 0.4
-      }
+    // Second Option with color
+
+    // this.map.on('load', function () {
+    //   let layers = this.getStyle().layers;
+    //   // Find the index of the first symbol layer in the map style
+    //   let firstSymbolId;
+    //   for (var i = 0; i < layers.length; i++) {
+    //   if (layers[i].type === 'symbol') {
+    //   firstSymbolId = layers[i].id;
+    //   break;
+    //   }
+    //   }
+    //   this.addLayer({
+    //   'id': 'urban-areas-fill',
+    //   'type': 'fill',
+    //   'source': {
+    //   'type': 'geojson',
+    //   'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
+    //   },
+    //   'layout': {},
+    //   'paint': {
+    //   'fill-color': '#f08',
+    //   'fill-opacity': 0.4
+    //   }
       
-      }, firstSymbolId);
-      });
+    //   }, firstSymbolId);
+    //   });
     
    
-    // Promise Option
+    // First Promise Option
     // let stores_url = "https://raw.githubusercontent.com/digital-generation/generation-take-home-intern/master/src/store_directory.json"
     // console.log(stores_url);
     // fetch(stores_url)
@@ -162,16 +205,14 @@ export class AppComponent implements OnInit, AfterViewInit{
       //       .setLngLat({
       //       lat: this.lat,
       //       lng: this.lng
-      //       }).addTo(this.map)
+      //       })
+      //       .addTo(this.map)
       //       console.log(markers);
       //     });
       //   }
       // )
-
-
     // this.coordinadas.nativeElement.innerHTML = 'other';
-
-    // Add Others Markers
+    
     // Add Others Markers
     // this.element = document.createElement('div')
     // this.element.className = 'marker'
@@ -193,5 +234,3 @@ export class AppComponent implements OnInit, AfterViewInit{
     //     .setLngLat(feature.geometry.coordinates) 
     //     .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
     //     .addTo(this.map); } );
-  }
-}
