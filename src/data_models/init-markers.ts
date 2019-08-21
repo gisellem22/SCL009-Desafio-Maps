@@ -1,13 +1,13 @@
 import { Markers } from './marker-model';
 
 
-export default class Init {
-  load(){
-    if(localStorage.getItem('markersPoints') === null || localStorage.getItem('markersPoints') === undefined){
-      console.log('No se encontraron marcadores');
+// export default class Init {
+//   load(){
+//     if(localStorage.getItem('markersPoints') === null || localStorage.getItem('markersPoints') === undefined){
+//       console.log('No se encontraron marcadores');
      
      
-     const markersPoints: Markers[] = [
+    export const markersPoints: Markers[] = [
     {
       "Name": "Red Barn Stores 3858-CUAJIMALPA",
       "Address": "JOSE MA. CASTORENA NO. 84  COL. SAN JOSE DE LOS CEDROS, DELEGACION CUAJIMALPA   MEXICO D.F. C.P. 05210", 
@@ -2194,11 +2194,12 @@ export default class Init {
 
     }];
 
-    localStorage.setItem('markersPoints', JSON.stringify(markersPoints));
+    // localStorage.setItem('markersPoints', JSON.stringify(markersPoints));
 
-    }else {
-     console.log('Cargando marcadores...'); 
-    }
+    // }
+    // else {
+    //  console.log('Cargando marcadores...'); 
+    // }
 
-  }
-}
+//   }
+// }
