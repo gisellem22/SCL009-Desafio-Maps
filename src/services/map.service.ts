@@ -25,7 +25,7 @@ export class MapService {
   // }
 
  // Function with Observable
- getData(): Observable<any> {
+ getData(): Observable<Markers[]> {
   return of(markersPoints);
 }
 

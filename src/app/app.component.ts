@@ -4,10 +4,6 @@ import { environment } from '../environments/environment';
 import * as mapboxgl from 'mapbox-gl';
 // Service
 import { MapService } from './../services/map.service';
-import { Button } from 'protractor';
-import { markersPoints } from 'src/data_models/init-markers';
-// Class
-// import { Markers } from '../data_models/marker-model';
 
 @Component({
   selector: 'app-root',
@@ -50,7 +46,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   }
 
   ngOnInit() {
-    // Initializing mapbox with token
+  // Initializing mapbox with token
     (mapboxgl as typeof mapboxgl).accessToken = environment.mapbox.accessToken;
       this.map = new mapboxgl.Map({
         container: 'map',
@@ -94,7 +90,7 @@ export class AppComponent implements OnInit, AfterViewInit{
         })
         .setLngLat(arr) 
         .addTo(this.map);
-        console.log(arr);
+        // console.log(arr);
         
         // let monument = arr;
         // let map = new mapboxgl.Map({
@@ -104,9 +100,9 @@ export class AppComponent implements OnInit, AfterViewInit{
         // zoom: 15
         // });
          
-        // // create the popup
-        // let popup = new mapboxgl.Popup({ offset: 25 })
-        // .setText('Construction on the Washington Monument began in 1848.');
+        // create the popup
+        let popup = new mapboxgl.Popup({ offset: 25 })
+        .setText('Construction on the Washington Monument began in 1848.');
          
         // // create DOM element for the marker
         // let el = document.createElement('div');
