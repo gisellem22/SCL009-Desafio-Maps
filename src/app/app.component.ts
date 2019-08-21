@@ -82,15 +82,17 @@ export class AppComponent implements OnInit, AfterViewInit{
           let coordinates = e.Coordinates;  
           let arr:[number, number] = [coordinates.lng, coordinates.lat]
           console.log(arr);
+          let name = e.Name;
 
           // Option for Markers in map
-          // let popup = new mapboxgl.Popup({closeOnClick: false})
+          
           let marker = new mapboxgl.Marker({
             draggable: true
             
           })
+          // let popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat(arr)
-          // .setHTML('<h1>Coordenadas</h1>')
+          // .setHTML(name)
           .addTo(this.map);
           
           function onDragEnd() {

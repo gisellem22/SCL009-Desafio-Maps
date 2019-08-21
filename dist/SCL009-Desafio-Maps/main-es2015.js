@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-light bg-light col-12\">\n  <img style=\"float:left\" width=\"70\" src=\"https://i.ibb.co/bW0h0jG/logo.png\" alt=\"g logo\">\n  <div class=\"title\">\n    <h1 class=\"m-2\"> {{ title }} </h1>\n  </div>\n  <!--Form other options  -->\n  <form class=\"form-inline\">\n      <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>\n      <button class=\"btn btn-sm bg-light\" routerLink=\"/project\" routerLinkActive=\"active\" type=\"button\"><h3>Proyectos</h3></button>\n      <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/about\" routerLinkActive=\"active\" type=\"button\"><h3>Nosotros</h3></button> -->\n  </form>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <div id=\"map\" class=\"match-parent col-12 mt-5\">\n        <!-- <ul> -->\n          <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" >\n              {{m.lat}}{{m.lng}}\n            <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n            <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n              [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n              (click)=\"onSelect(Markers.Coordinates)\">\n              [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n            </div> -->\n                   \n          </div>\n        <!-- </ul> -->\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n"
+module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-light bg-light col-12\">\n  <img style=\"float:left\" width=\"70\" src=\"https://i.ibb.co/bW0h0jG/logo.png\" alt=\"g logo\">\n  <div class=\"title\">\n    <h1 class=\"m-2\"> {{ title }} </h1>\n  </div>\n  <!--Form other options  -->\n  <form class=\"form-inline\">\n      <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>\n      <button class=\"btn btn-sm bg-light\" routerLink=\"/project\" routerLinkActive=\"active\" type=\"button\"><h3>Proyectos</h3></button>\n      <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/about\" routerLinkActive=\"active\" type=\"button\"><h3>Nosotros</h3></button> -->\n  </form>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <div id=\"map\" class=\"match-parent col-12 mt-5\">\n          <div #Coordinadas (click)=\"onChange()\" id='coordinates' class='' *ngFor=\"let m of markers\">\n            {{markers}}\n          </div>\n       <!-- <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" (click)=\"onSelect(m)\"> {{m.lat}}{{m.lng}} </div> -->\n             <!-- <ul> -->\n              <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n              <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n              [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n              (click)=\"onSelect(Markers.Coordinates)\">\n              [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n              </div> -->\n          <!-- </ul> -->\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<div class=\"map\" id=\"map\" class=\"match-parent\"></div>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".body {\n    height: 100%;\n}\n\n.match-parent {\n    width: 100%;\n    height: 600px;\n    display: flow-root;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n\n.marker {\n    background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);\n    background-size: cover;\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n    cursor: pointer;\n}\n\n.title {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n            justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksV0FBVztJQUNYLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2Qix5QkFBbUI7WUFBbkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksMERBQTBEO0lBQzFELHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25COztBQUNBO0lBQ0ksb0JBQWE7SUFBYixhQUFhO0lBQ2IseUJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix3QkFBdUI7WUFBdkIsdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYm9keSB7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ubWF0Y2gtcGFyZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDYwMHB4O1xuICAgIGRpc3BsYXk6IGZsb3ctcm9vdDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLm1hcmtlciB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0dHBzOi8vaS5pYmIuY28veXB5aDJSYi9jaGluY2gucG5nKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA1MHB4O1xuICAgIGhlaWdodDogNTBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnRpdGxlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59Il19 */"
+module.exports = ".body {\n    height: 100%;\n}\n\n.match-parent {\n    width: 100%;\n    height: 600px;\n    display: flow-root;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n\n.coordinates {\n    background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n    cursor: pointer;\n}\n\n.title {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n            justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksV0FBVztJQUNYLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2Qix5QkFBbUI7WUFBbkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksMERBQTBEO0lBQzFELHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25COztBQUNBO0lBQ0ksb0JBQWE7SUFBYixhQUFhO0lBQ2IseUJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix3QkFBdUI7WUFBdkIsdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYm9keSB7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ubWF0Y2gtcGFyZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDYwMHB4O1xuICAgIGRpc3BsYXk6IGZsb3ctcm9vdDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNvb3JkaW5hdGVzIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoaHR0cHM6Ly9pLmliYi5jby95cHloMlJiL2NoaW5jaC5wbmcpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4udGl0bGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn0iXX0= */"
 
 /***/ }),
 
@@ -82,9 +82,9 @@ __webpack_require__.r(__webpack_exports__);
 // Class
 // import { Markers } from '../data_models/marker-model';
 let AppComponent = class AppComponent {
-    // Class
-    // import { Markers } from '../data_models/marker-model';
-    constructor() {
+    constructor(mapService) {
+        this.mapService = mapService;
+        // @ViewChild('coordinadas') coordinadas: ElementRef;
         // Title app
         this.title = 'App-Maps';
         this.style = 'mapbox://styles/mapbox/streets-v11';
@@ -92,48 +92,62 @@ let AppComponent = class AppComponent {
         this.lat = 19.42847;
         this.lng = -99.12766;
     }
-    // constructor (private mapService: MapService) {
-    //  let markers = this.mapService.getMarkers();
-    // } 
+    // Call Observable with Subscribe
+    getMarkers() {
+        this.mapService.getMarkers()
+            .subscribe(markers => this.list = markers);
+    }
     ngOnInit() {
-        // initializing mapbox with token
+        // Initializing mapbox with token
         mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["accessToken"] = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].mapbox.accessToken;
         this.map = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Map"]({
             container: 'map',
             style: this.style,
-            zoom: 10,
+            zoom: 3,
             center: [this.lng, this.lat]
         });
         // Add map controls
         this.map.addControl(new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["NavigationControl"]());
-        // Add first marker
+        // Add first marker in MexiciCity
         let marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Marker"](this.element)
             .setLngLat({
             lat: 19.42847,
             lng: -99.12766
         })
             .addTo(this.map);
-        // Add Others Markers
-        // this.element = document.createElement('div')
-        // this.element.className = 'marker'
-        // this.element.addEventListener('markerClick', ()=> {
-        //   window.alert('diste click!!')
-        // })
-        // this.map.on('click', function(e) {
-        //   var features = this.map.queryRenderedFeatures(e.point, {
-        //     markers: ['layer-name-here'] 
-        //    } ); 
-        //    if (!features.length) { 
-        //      return; 
-        //     } 
-        //   var feature = features[0];
-        //   var popup = new (mapboxgl as typeof mapboxgl).Popup( { 
-        //     offset: [0, -15] } ) 
-        //     .setLngLat(feature.geometry.coordinates) 
-        //     .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
-        //     .addTo(this.map); } );
+    }
+    ngAfterViewInit() {
+        //Call service to print markers
+        let list = this.mapService.getMarkers();
+        console.log(list);
+        list.forEach(element => {
+            let item = element;
+            console.log(element);
+            item.forEach(e => {
+                let coordinates = e.Coordinates;
+                let arr = [coordinates.lng, coordinates.lat];
+                console.log(arr);
+                // Option for Markers in map
+                // let popup = new mapboxgl.Popup({closeOnClick: false})
+                let marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Marker"]({
+                    draggable: true
+                })
+                    .setLngLat(arr)
+                    // .setHTML('<h1>Coordenadas</h1>')
+                    .addTo(this.map);
+                function onDragEnd() {
+                    let lngLat = this.marker.getLngLat();
+                    this.coordinates.style.display = 'block';
+                    this.coordinates.innerHTML = 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+                }
+                marker.on('dragend', onDragEnd);
+            });
+        });
     }
 };
+AppComponent.ctorParameters = () => [
+    { type: _services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"] }
+];
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
@@ -143,6 +157,122 @@ AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     })
 ], AppComponent);
 
+// // Third Option with anchor
+// this.map.on('load', function () {
+//   this.addLayer({
+//   "id": "points",
+//   "type": "symbol",
+//   "source": {
+//   "type": "geojson",
+//   "data": {
+//   "type": "FeatureCollection",
+//   "features": [{
+//   "type": "Feature",
+//   "geometry": {
+//   "type": "Point",
+//   "coordinates": [-77.03238901390978, 38.913188059745586]
+//   },
+//   "properties": {
+//   "title": "Mapbox DC",
+//   "icon": "harbor"
+//   }
+//   }, 
+//   // {
+//   // "type": "Feature",
+//   // "geometry": {
+//   // "type": "Point",
+//   // "coordinates": [-122.414, 37.776]
+//   // },
+//   // "properties": {
+//   // "title": "Mapbox SF",
+//   // "icon": "harbor"
+//   // }
+//   // }
+//   ]
+//   }
+//   },
+//   "layout": {
+//   "icon-image": "{icon}-15",
+//   "text-field": "{title}",
+//   "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+//   "text-offset": [0, 0.6],
+//   "text-anchor": "top"
+//   }
+//   });
+//   });
+// Second Option with color
+// this.map.on('load', function () {
+//   let layers = this.getStyle().layers;
+//   // Find the index of the first symbol layer in the map style
+//   let firstSymbolId;
+//   for (var i = 0; i < layers.length; i++) {
+//   if (layers[i].type === 'symbol') {
+//   firstSymbolId = layers[i].id;
+//   break;
+//   }
+//   }
+//   this.addLayer({
+//   'id': 'urban-areas-fill',
+//   'type': 'fill',
+//   'source': {
+//   'type': 'geojson',
+//   'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
+//   },
+//   'layout': {},
+//   'paint': {
+//   'fill-color': '#f08',
+//   'fill-opacity': 0.4
+//   }
+//   }, firstSymbolId);
+//   });
+// First Promise Option
+// let stores_url = "https://raw.githubusercontent.com/digital-generation/generation-take-home-intern/master/src/store_directory.json"
+// console.log(stores_url);
+// fetch(stores_url)
+// .then(
+//   res => res.json()
+//   ).then(
+//     data => {
+// console.log(data);
+// data.forEach(element => {
+// console.log(element.Coordinates);
+// let mark = document.createElement('div')
+// this.element.className = 'coordinate'
+//       let coordinates = element.Coordinates;
+//       let lat = coordinates.lat;
+//       let lng = coordinates.lng;
+//       console.log(coordinates.lat);
+//       console.log(coordinates.lng);
+//       let markers = new mapboxgl.Marker(this.coordinates)
+//       .setLngLat({
+//       lat: this.lat,
+//       lng: this.lng
+//       })
+//       .addTo(this.map)
+//       console.log(markers);
+//     });
+//   }
+// )
+// this.coordinadas.nativeElement.innerHTML = 'other';
+// Add Others Markers
+// this.element = document.createElement('div')
+// this.element.className = 'marker'
+// this.element.addEventListener('Click', ()=> {
+//   window.alert('diste click!!')
+// })
+//      this.map.on('click', function(e) {
+//      var features = this.map.queryRenderedFeatures(e.point, {
+//      markers: ['direction'] 
+//      } ); 
+//      if (!features.length) { 
+//      return; 
+//     } 
+//     let feature = features[0];
+//     let popup = new mapboxgl.Popup( { 
+//     offset: [0, -15] } ) 
+//     .setLngLat(feature.geometry.coordinates) 
+//     .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+//     .addTo(this.map); } );
 
 
 /***/ }),
@@ -257,21 +387,20 @@ MapComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*****************************************!*\
   !*** ./src/data_models/init-markers.ts ***!
   \*****************************************/
-/*! exports provided: Init */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Init", function() { return Init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Init; });
 class Init {
     load() {
-        if (localStorage.getItem('markers') === null || localStorage.getItem('markers') === undefined) {
+        if (localStorage.getItem('markersPoints') === null || localStorage.getItem('markersPoints') === undefined) {
             console.log('No se encontraron marcadores');
-            let markers = [
+            const markersPoints = [
                 {
                     "Name": "Red Barn Stores 3858-CUAJIMALPA",
                     "Address": "JOSE MA. CASTORENA NO. 84  COL. SAN JOSE DE LOS CEDROS, DELEGACION CUAJIMALPA   MEXICO D.F. C.P. 05210",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 39.390897,
                         "lng": -99.066067
@@ -280,7 +409,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2344-LOMAS",
                     "Address": "BOULEVARD MANUEL AVILA CAMACHO NO. 491 COL. PERIODISTAS C.P.11220",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 40.640771,
                         "lng": -74.016133
@@ -289,7 +417,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 1770-PATIO SANTA FE",
                     "Address": "AV. PROLONGACIÓN PASEO DE LA REFORMA NO. 400, ENTRE LAS CALLES: AVENIDA VASCO DE QUIROGA  Y DE AVENIDA PASEO DE LA REFORMA, COL. SANTA FE,  DELEGACIÓN ÁLVARO OBREGÓN CP  01210",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 39.390897,
                         "lng": -99.066067
@@ -298,7 +425,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2466-CUITLAHUAC",
                     "Address": "AV. CUITLÁHUAC NO. 3651 COL. HOGAR Y SEGURIDAD DELEG. AZCAPOTZALCO C.P.02820",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.46961,
                         "lng": -99.17176
@@ -307,7 +433,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3862-AZCAPOTZALCO",
                     "Address": "AV. NEXTENGO NO. 78 COL. SANTA CRUZ ACAYUCAN , MEXICO D.F. C.P. 02770",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.47704,
                         "lng": -99.1927
@@ -316,7 +441,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2347-TLAHUAC",
                     "Address": "CALZ. TLÁHUAC NO. 5662  COL. SAN LORENZO TEZONCO  DELEG. TLÁHUAC, MEXICO DF. C.P. 13266",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.30518,
                         "lng": -99.0615
@@ -325,7 +449,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2464-MIRAMONTES ",
                     "Address": "AV. ESCUELA NAVAL MILITAR # 753 ESQ. AV. CANAL DE MIRAMONTES DELEG. COYOACÁN C.P. 04890",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.31519,
                         "lng": -99.12459
@@ -334,7 +457,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2670-TLALPAN",
                     "Address": "CALZADA TLALPAN NO. 1037  COL. AMERICAS UNIDAS C.P. 03500 DELEG. BENITO JUÁREZ",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.3801,
                         "lng": -99.14036
@@ -343,7 +465,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3857-VILLA COAPA",
                     "Address": "AV. CANAL DE MIRAMONTES NO. 3520 COL. SAN BARTOLO COAPA  C.P. 14390, MEXICO, D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.29443,
                         "lng": -99.1255
@@ -352,7 +473,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2345-TEPEYAC",
                     "Address": "CALZ. DE GUADALUPE NO. 431 COL. GUADALUPE TEPEYAC C.P.07840 DELEG. GUSTAVO A. MADERO",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.47242,
                         "lng": -99.12184
@@ -361,7 +481,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3794-ACUEDUCTO DE GUADALUPE",
                     "Address": "AV. LUIS ESPINOZA NO.  160 COL. SANTIAGO ATEPETLAC, DELEGACION GUSTAVO A. MADERO MEXICO D.F. C.P. 07200",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 39.390897,
                         "lng": -99.066067
@@ -370,7 +489,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3846-BUENAVISTA",
                     "Address": "INSURGENTES NORTE NO. 131, COL GUERRERO C.P. 06300   MEXICO, D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.44128,
                         "lng": -99.14378
@@ -379,7 +497,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3851-AEROPUERTO",
                     "Address": "CALZADA IGNACIO ZARAGOZA NO. 58   COL. FEDERAL  C.P. 15700, MEXICO D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.41938,
                         "lng": -99.09469
@@ -388,7 +505,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3872-BALBUENA",
                     "Address": "FRAY SERVANDO TERESA DE MIER NO. 881 COL.  JARDIN BALBUENA C.P. 15900, MEXICO D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.41799,
                         "lng": -99.10565
@@ -397,7 +513,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3877-TORRES  LINDAVISTA",
                     "Address": "MIGUEL OTHON DE MENDIZABAL OTE. 343, COL. NUEVA INDUSTRIAL VALLEJO,  C.P. 07700 MÉXICO, D.F",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.50548,
                         "lng": -99.15066
@@ -406,7 +521,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 4547-EDUARDO MOLINA",
                     "Address": "CALZADA SAN JUAN DE ARAGÓN NO. 516 COLONIA D.M. NACIONAL DELEGARCIÓN GUSTAVO A. MADERO D.F. C.P. 7090",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 39.390897,
                         "lng": -99.066067
@@ -415,7 +529,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2430-COPILCO",
                     "Address": "AV. COPILCO NO. 164 COL. OXTOPULCO DEL. COYOACAN C.P. 04318",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.344095,
                         "lng": -99.178408
@@ -424,7 +537,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 2689-FELIX CUEVAS",
                     "Address": "AV. SAN FRANCISCO NO. 1621 COL. DEL VALLE DEL. BENITO JUÁREZ C.P. 03100",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.38631,
                         "lng": -99.17346
@@ -433,7 +545,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3845-UNIVERSIDAD",
                     "Address": "AV. UNIVERSIDAD NO. 936-A COL. SANTA CRUZ ATOYAC   C.P. 03310, MEXICO D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.36984,
                         "lng": -99.16516
@@ -442,7 +553,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3848-TAXQUEÑA",
                     "Address": "MIGUEL A. DE QUEVEDO NO. 175 COL. CHIMALISTAC DELEGACION COYOACAN C.P. 01070, MEXICO D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.34828,
                         "lng": -99.18477
@@ -451,7 +561,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3852-PLATEROS",
                     "Address": "BLVD. ADOLFO LOPEZ MATEOS NO. 1701 COL. LOMAS DE PLATEROS, DELEG. ALVARO OBREGON C.P. 01460 MEXICO D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 39.390897,
                         "lng": -99.066067
@@ -460,7 +569,6 @@ class Init {
                 {
                     "Name": "Red Barn Stores 3863-PERIFERICO SUR",
                     "Address": "AV. CENTRO COMERCIAL NO. 190 COL. INSURGENTES CUICUILCO C.P. 04530 MEXICO, D.F.",
-                    "Arrastrable": true,
                     "Coordinates": {
                         "lat": 19.30759,
                         "lng": -99.19368
@@ -2475,7 +2583,7 @@ class Init {
                     }
                 }
             ];
-            localStorage.setItem('markers', JSON.stringify(markers));
+            localStorage.setItem('markersPoints', JSON.stringify(markersPoints));
         }
         else {
             console.log('Cargando marcadores...');
@@ -2555,21 +2663,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapService", function() { return MapService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _data_models_init_markers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data_models/init-markers */ "./src/data_models/init-markers.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var _data_models_init_markers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data_models/init-markers */ "./src/data_models/init-markers.ts");
+
 
 
 // Class
+// import { Markers } from 'src/data_models/marker-model';
+// Data
 
-let MapService = class MapService extends _data_models_init_markers__WEBPACK_IMPORTED_MODULE_2__["Init"] {
+
+let MapService = class MapService extends _data_models_init_markers__WEBPACK_IMPORTED_MODULE_3__["default"] {
     constructor() {
         // this.getMarkers();
         super();
         console.log('Servicio de marcadores iniciando...');
         this.load();
     }
+    // getMarkers(){
+    //   let markers = JSON.parse(localStorage.getItem('markers'));
+    //   console.log('Servicio de marcadores leyendo JSON: '+ JSON.stringify(markers));
+    // }
+    // Function with Observable
+    getData() {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_data_models_init_markers__WEBPACK_IMPORTED_MODULE_3__["default"]);
+    }
+    // Function with Observable
     getMarkers() {
         let markers = JSON.parse(localStorage.getItem('markers'));
-        console.log('Servicio de marcadores leyendo dataJSON: ' + markers);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(markers);
     }
 };
 MapService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
