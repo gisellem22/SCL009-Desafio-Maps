@@ -8,6 +8,7 @@ import { MapComponent } from './map/map.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetailsComponent } from './components/details/details.component';
 
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DetailsComponent } from './components/details/details.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule
     // HttpClient
     
   ],
