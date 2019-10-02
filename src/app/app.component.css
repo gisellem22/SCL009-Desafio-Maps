@@ -4,32 +4,32 @@
 
 .match-parent {
     width: 100%;
-    height: 600px;
-    display: flow-root;
+    height: 1000px;
+    /* display: flow-root; */
     justify-content: center;
     align-items: center;
 }
-.coordinates {
+/* .coordinates {
     background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);
     background-size: cover;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
-}
+} */
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    align-items: left;
+    justify-content: left;
 }
-#marker {
+/* #marker {
     background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
     background-size: cover;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    }
+    } */
      
     .mapboxgl-popup {
     max-width: 200px;

@@ -5,12 +5,16 @@ import { environment } from '../environments/environment';
 // COMPONENTS
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
+import { HomeComponent } from './components/home/home.component';
+import { DetailsComponent } from './components/details/details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    HomeComponent,
+    DetailsComponent
    
   ],
   imports: [

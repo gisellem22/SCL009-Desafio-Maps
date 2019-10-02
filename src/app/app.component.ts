@@ -16,15 +16,16 @@ export class AppComponent implements OnInit, AfterViewInit{
   // @ViewChild('coordinadas') coordinadas: ElementRef;
 
   // Title app
-  title = 'App-Maps';
+  title = 'Uber';
 
   // MapBox
   map: mapboxgl.Map;
   style = 'mapbox://styles/mapbox/streets-v11';
   
-  // Position initial MexicoCity
-  lat = 19.42847;
-  lng = -99.12766;
+  // Position initial SantiagoCity
+  lat = -33.4372;
+  lng = -70.6506;
+  // zoom = 16;
 
   // class marker, element and others
   list: any;  //list data.
@@ -51,18 +52,19 @@ export class AppComponent implements OnInit, AfterViewInit{
       this.map = new mapboxgl.Map({
         container: 'map',
         style: this.style,
-        zoom: 3,
+        zoom: 16,
         center: [this.lng, this.lat]
       });
 
     // Add map controls
     this.map.addControl(new mapboxgl.NavigationControl());
 
-    // Add first marker in MexiciCity
+    // Add first marker in SantiagoCity
     let marker = new mapboxgl.Marker(this.element)
     .setLngLat({
-      lat: 19.42847,
-      lng: -99.12766
+      lat: -33.4372,
+      lng: -70.6506,
+      // zoom = 16,
     })
     .addTo(this.map)
 
@@ -70,26 +72,26 @@ export class AppComponent implements OnInit, AfterViewInit{
     
   ngAfterViewInit(){
     //Call service to print markers
-    let list = this.mapService.getData();
-    console.log("LISTA:", list);
+    // let list = this.mapService.getData();
+    // console.log("LISTA:", list);
 
-    list.forEach(element => {
-      let item = element;
-      console.log("ELEMENT:", element);
+    // list.forEach(element => {
+    //   let item = element;
+    //   console.log("ELEMENT:", element);
 
-      item.forEach(e => {
-        let coordinates = e.Coordinates;  
-        let arr:[number, number] = [coordinates.lng, coordinates.lat]
+    //   item.forEach(e => {
+    //     let coordinates = e.Coordinates;  
+    //     let arr:[number, number] = [coordinates.lng, coordinates.lat]
         // console.log(arr);
-        let name = e.Name;
+        // let name = e.Name;
         // let address = e.Address;
 
         // Option for Markers in map
-        let marker = new mapboxgl.Marker({
-          draggable: true  
-        })
-        .setLngLat(arr) 
-        .addTo(this.map);
+        // let marker = new mapboxgl.Marker({
+        //   draggable: true  
+        // })
+        // .setLngLat(arr) 
+        // .addTo(this.map);
         // console.log(arr);
         
         // let monument = arr;
@@ -101,8 +103,8 @@ export class AppComponent implements OnInit, AfterViewInit{
         // });
          
         // create the popup
-        let popup = new mapboxgl.Popup({ offset: 25 })
-        .setText('Construction on the Washington Monument began in 1848.');
+        // let popup = new mapboxgl.Popup({ offset: 25 })
+        // .setText('Construction on the Washington Monument began in 1848.');
          
         // // create DOM element for the marker
         // let el = document.createElement('div');
@@ -113,8 +115,8 @@ export class AppComponent implements OnInit, AfterViewInit{
         // .setLngLat(monument)
         // .setPopup(popup) // sets a popup on this marker
         // .addTo(map);
-      });
-      });
+      // });
+      // });
   }
 }
     
