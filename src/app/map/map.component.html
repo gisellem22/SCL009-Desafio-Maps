@@ -1,14 +1,39 @@
-<p>Prueba</p>
-<div class="wrapper">
-
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        ...
-    </nav>
-
-    <!-- Page Content -->
-    <div id="content">
-        <!-- We'll fill this with dummy content -->
+<!-- NavBar Style Bootstrap -->
+<nav class="navbar navbar-light bg-light col-12">
+    <img style="float:left" width="70" src="https://i.ibb.co/XfnWSkF/uber.png" alt="g logo">
+    <div class="title">
+      <h1 class=""> {{ title }} </h1>
     </div>
-
-</div> 
+    <!-- <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/details" routerLinkActive="active">details</a> -->
+    Form other options 
+    <form class="form-inline">
+        <!-- <button class="btn btn-sm btn-outline-bg-light" routerLink="/home" routerLinkActive="active" type="button"><h3>Home</h3></button>-->
+        <!--<button class="btn btn-sm btn-outline-bg-light" routerLink="/details" routerLinkActive="active" type="button"><h3>Details</h3></button> -->
+    </form>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 p-0">
+        <div id="map" class="match-parent col-12 p-0">
+            <div #Coordinadas id='coordinates' class='' *ngFor="let m of markers">
+              {{markers}}
+            </div>
+         <!-- <div id="marker" class="marker" *ngFor="let m of markers" (click)="onSelect(m)"> {{m.lat}}{{m.lng}} </div> -->
+               <!-- <ul> -->
+                <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->
+                <!-- <div *ngFor="let m of markers; let i = index"(click)="onSelect(m, i)"
+                [lat]="m.lat" [lng]="m.lng"[markerDraggable]="m.arrastrable"
+                (click)="onSelect(Markers.Coordinates)">
+                [Coordinates.lat]="item.lat" [Coordinates.long]="item.lng"
+                </div> -->
+            <!-- </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  
+  
+  
+  
