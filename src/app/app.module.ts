@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProgramComponent } from './components/program/program.component';
 import  {InfoComponent } from './components/info/info.component';
 import { DirectionComponent } from './components/direction/direction.component';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DirectionComponent } from './components/direction/direction.component';
     DetailsComponent,
     ProgramComponent,
     InfoComponent,
-    DirectionComponent
+    DirectionComponent,
+    ConfirmationComponent
    
   ],
   imports: [
