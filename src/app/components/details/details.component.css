@@ -1,0 +1,42 @@
+.card {
+    padding: 3px 0 3px 0;
+
+}
+.select-card {
+    padding: 3px 0 3px 0;
+    background-color: #EDEDED; 
+
+}
+.card-body {
+    padding: 0 0 0 1px;
+    
+}
+.card-body > .card-text {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight:bold
+}
+ 
+.card-img {
+    max-width: 4em;
+}
+.card1-img {
+    max-width: 4em;
+    /* text-align: right; */
+}
+.card2-img {
+    max-width: 9em;
+    /* text-align: right; */
+}
+.info {
+    text-align: center;
+    font-size: 14px;
+}
+.btn {
+    background-color: black;
+    padding: 7px 29px;
+    color: white;
+    font-weight:bold;
+    text-align: center;
+}

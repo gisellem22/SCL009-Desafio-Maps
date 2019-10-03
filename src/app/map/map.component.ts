@@ -22,8 +22,8 @@ export class MapComponent implements OnInit {
   style = 'mapbox://styles/mapbox/streets-v11';
   
   // Position initial SantiagoCity
-  lat = -33.4372;
-  lng = -70.6506;
+  lat = -33.4190702;
+  lng = -70.6418162;
   // zoom = 16;
 
   // class marker, element and others
@@ -61,8 +61,9 @@ export class MapComponent implements OnInit {
     // Add first marker in SantiagoCity
     let marker = new mapboxgl.Marker(this.element)
     .setLngLat({
-      lat: -33.4372,
-      lng: -70.6506,
+     
+      lat: -33.4190702,
+      lng: -70.6418162,
       // zoom = 16,
     })
     .addTo(this.map)
