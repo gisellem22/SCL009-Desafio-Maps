@@ -14,7 +14,8 @@ export class DirectionComponent implements OnInit {
   ngOnInit() {
   }
   getDetails(direction:string) {
-    this.destinationService.getDestination(direction)
+    this.destinationService.getDirection(direction)
+    console.log(direction)
     this.router.navigate(['/details']);
   }
 }

@@ -1,4 +1,4 @@
-<section class="map">
+<section class="map" data-aos="zoom-out"  data-aos-duration="1000">
     <div>
         <app-map></app-map>
     </div>
@@ -12,7 +12,7 @@
                     placeholder="vie.,4 oct.">
             </div>
             <div class="welcome my-4 mx-0">
-                <input onfocus="(this.type='time')" class="form-control" (change)="fromDate($event)"
+                <input onfocus="(this.type='time')" class="form-control" (change)="fromTime($event)"
                     placeholder="15:00-15:10">
             </div>
         </form>
