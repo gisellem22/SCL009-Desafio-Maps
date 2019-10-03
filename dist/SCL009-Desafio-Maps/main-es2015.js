@@ -30,7 +30,29 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-light bg-light col-12\">\n  <img style=\"float:left\" width=\"70\" src=\"https://i.ibb.co/bW0h0jG/logo.png\" alt=\"g logo\">\n  <div class=\"title\">\n    <h1 class=\"m-2\"> {{ title }} </h1>\n  </div>\n  <!--Form other options  -->\n  <form class=\"form-inline\">\n      <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>-->\n      <button class=\"btn btn-sm bg-light\" routerLink=\"/map\" routerLinkActive=\"active\" type=\"button\"><h4>Favoritos</h4></button>\n      <!--<button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/about\" routerLinkActive=\"active\" type=\"button\"><h3>Nosotros</h3></button> -->\n  </form>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <div id=\"map\" class=\"match-parent col-12 mt-5\">\n          <div #Coordinadas id='coordinates' class='' *ngFor=\"let m of markers\">\n            {{markers}}\n          </div>\n       <!-- <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" (click)=\"onSelect(m)\"> {{m.lat}}{{m.lng}} </div> -->\n             <!-- <ul> -->\n              <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n              <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n              [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n              (click)=\"onSelect(Markers.Coordinates)\">\n              [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n              </div> -->\n          <!-- </ul> -->\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n"
+module.exports = "<!-- NavBar Style Bootstrap -->\n<!-- <nav class=\"navbar navbar-light bg-light col-12\">\n  <img style=\"float:left\" width=\"70\" src=\"https://i.ibb.co/XfnWSkF/uber.png\" alt=\"g logo\">\n  <div class=\"title\">\n    <h1 class=\"\"> {{ title }} </h1>\n  </div> -->\n  <!-- <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n  <a routerLink=\"/details\" routerLinkActive=\"active\">details</a> -->\n  <!-- Form other options \n  <form class=\"form-inline\"> -->\n      <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>-->\n      <!--<button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/details\" routerLinkActive=\"active\" type=\"button\"><h3>Details</h3></button> -->\n  <!-- </form>\n</nav>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-12 p-0\">\n      <div id=\"map\" class=\"match-parent col-12 p-0\">\n          <div #Coordinadas id='coordinates' class='' *ngFor=\"let m of markers\">\n            {{markers}}\n          </div> -->\n       <!-- <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" (click)=\"onSelect(m)\"> {{m.lat}}{{m.lng}} </div> -->\n             <!-- <ul> -->\n              <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n              <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n              [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n              (click)=\"onSelect(Markers.Coordinates)\">\n              [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n              </div> -->\n          <!-- </ul> -->\n      <!-- </div>\n    </div>\n  </div>\n</div> -->\n<router-outlet></router-outlet>\n\n\n\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/components/details/details.component.html":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/components/details/details.component.html ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>details works!</p>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/components/home/home.component.html":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/components/home/home.component.html ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-map></app-map>\n"
 
 /***/ }),
 
@@ -41,7 +63,53 @@ module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-li
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>Prueba</p>\n<div class=\"wrapper\">\n\n    <!-- Sidebar -->\n    <nav id=\"sidebar\">\n        ...\n    </nav>\n\n    <!-- Page Content -->\n    <div id=\"content\">\n        <!-- We'll fill this with dummy content -->\n    </div>\n\n</div> "
+module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-light bg-light col-12\">\n    <img style=\"float:left\" width=\"70\" src=\"https://i.ibb.co/XfnWSkF/uber.png\" alt=\"g logo\">\n    <div class=\"title\">\n      <h1 class=\"\"> {{ title }} </h1>\n    </div>\n    <!-- <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n    <a routerLink=\"/details\" routerLinkActive=\"active\">details</a> -->\n    Form other options \n    <form class=\"form-inline\">\n        <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>-->\n        <!--<button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/details\" routerLinkActive=\"active\" type=\"button\"><h3>Details</h3></button> -->\n    </form>\n  </nav>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 p-0\">\n        <div id=\"map\" class=\"match-parent col-12 p-0\">\n            <div #Coordinadas id='coordinates' class='' *ngFor=\"let m of markers\">\n              {{markers}}\n            </div>\n         <!-- <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" (click)=\"onSelect(m)\"> {{m.lat}}{{m.lng}} </div> -->\n               <!-- <ul> -->\n                <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n                <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n                [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n                (click)=\"onSelect(Markers.Coordinates)\">\n                [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n                </div> -->\n            <!-- </ul> -->\n        </div>\n      </div>\n    </div>\n  </div>\n  <router-outlet></router-outlet>\n  \n  \n  \n  "
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_map_map_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../app/map/map.component */ "./src/app/map/map.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_details_details_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/details/details.component */ "./src/app/components/details/details.component.ts");
+
+
+
+
+
+
+const appRoutes = [
+    { path: 'map', component: _app_map_map_component__WEBPACK_IMPORTED_MODULE_3__["MapComponent"] },
+    { path: 'home', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
+    { path: 'details', component: _components_details_details_component__WEBPACK_IMPORTED_MODULE_5__["DetailsComponent"] },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: _app_map_map_component__WEBPACK_IMPORTED_MODULE_3__["MapComponent"] },
+];
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [],
+        imports: [
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(appRoutes, { enableTracing: false, scrollPositionRestoration: 'enabled' } // <-- debugging purposes only
+            )
+        ],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
+
+
 
 /***/ }),
 
@@ -52,7 +120,7 @@ module.exports = "<p>Prueba</p>\n<div class=\"wrapper\">\n\n    <!-- Sidebar -->
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".body {\n    height: 100%;\n}\n\n.match-parent {\n    width: 100%;\n    height: 600px;\n    display: flow-root;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n\n.coordinates {\n    background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n    cursor: pointer;\n}\n\n.title {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n            justify-content: center;\n}\n\n#marker {\n    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');\n    background-size: cover;\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n    cursor: pointer;\n    }\n\n.mapboxgl-popup {\n    max-width: 200px;\n    }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksV0FBVztJQUNYLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2Qix5QkFBbUI7WUFBbkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksMERBQTBEO0lBQzFELHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25COztBQUNBO0lBQ0ksb0JBQWE7SUFBYixhQUFhO0lBQ2IseUJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix3QkFBdUI7WUFBdkIsdUJBQXVCO0FBQzNCOztBQUNBO0lBQ0ksNEZBQTRGO0lBQzVGLHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2Y7O0FBRUE7SUFDQSxnQkFBZ0I7SUFDaEIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ib2R5IHtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5tYXRjaC1wYXJlbnQge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogNjAwcHg7XG4gICAgZGlzcGxheTogZmxvdy1yb290O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uY29vcmRpbmF0ZXMge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybChodHRwczovL2kuaWJiLmNvL3lweWgyUmIvY2hpbmNoLnBuZyk7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi50aXRsZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuI21hcmtlciB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL2RvY3MubWFwYm94LmNvbS9tYXBib3gtZ2wtanMvYXNzZXRzL3dhc2hpbmd0b24tbW9udW1lbnQuanBnJyk7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogNTBweDtcbiAgICBoZWlnaHQ6IDUwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG4gICAgIFxuICAgIC5tYXBib3hnbC1wb3B1cCB7XG4gICAgbWF4LXdpZHRoOiAyMDBweDtcbiAgICB9Il19 */"
+module.exports = ".body {\n    height: 100%;\n}\n\n.match-parent {\n    width: 100%;\n    height: 1000px;\n    /* display: flow-root; */\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n\n/* .coordinates {\n    background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n    cursor: pointer;\n} */\n\n.title {\n    /* display: flex; */\n    -webkit-box-align: left;\n            align-items: left;\n    -webkit-box-pack: left;\n            justify-content: left;\n}\n\n/* #marker {\n    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');\n    background-size: cover;\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n    cursor: pointer;\n    } */\n\n.mapboxgl-popup {\n    max-width: 200px;\n    }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksV0FBVztJQUNYLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2Qix5QkFBbUI7WUFBbkIsbUJBQW1CO0FBQ3ZCOztBQUNBOzs7Ozs7O0dBT0c7O0FBQ0g7SUFDSSxtQkFBbUI7SUFDbkIsdUJBQWlCO1lBQWpCLGlCQUFpQjtJQUNqQixzQkFBcUI7WUFBckIscUJBQXFCO0FBQ3pCOztBQUNBOzs7Ozs7O09BT087O0FBRUg7SUFDQSxnQkFBZ0I7SUFDaEIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ib2R5IHtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5tYXRjaC1wYXJlbnQge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwMHB4O1xuICAgIC8qIGRpc3BsYXk6IGZsb3ctcm9vdDsgKi9cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLyogLmNvb3JkaW5hdGVzIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoaHR0cHM6Ly9pLmliYi5jby95cHloMlJiL2NoaW5jaC5wbmcpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59ICovXG4udGl0bGUge1xuICAgIC8qIGRpc3BsYXk6IGZsZXg7ICovXG4gICAgYWxpZ24taXRlbXM6IGxlZnQ7XG4gICAganVzdGlmeS1jb250ZW50OiBsZWZ0O1xufVxuLyogI21hcmtlciB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL2RvY3MubWFwYm94LmNvbS9tYXBib3gtZ2wtanMvYXNzZXRzL3dhc2hpbmd0b24tbW9udW1lbnQuanBnJyk7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogNTBweDtcbiAgICBoZWlnaHQ6IDUwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9ICovXG4gICAgIFxuICAgIC5tYXBib3hnbC1wb3B1cCB7XG4gICAgbWF4LXdpZHRoOiAyMDBweDtcbiAgICB9Il19 */"
 
 /***/ }),
 
@@ -68,104 +136,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mapbox-gl */ "./node_modules/mapbox-gl/dist/mapbox-gl.js");
-/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../services/map.service */ "./src/services/map.service.ts");
 
 
-
-// MapBox
-
-// Service
-
-// Class
-// import { Markers } from '../data_models/marker-model';
 let AppComponent = class AppComponent {
-    constructor(mapService) {
-        this.mapService = mapService;
-        // @ViewChild('coordinadas') coordinadas: ElementRef;
-        // Title app
-        this.title = 'App-Maps';
-        this.style = 'mapbox://styles/mapbox/streets-v11';
-        // Position initial MexicoCity
-        this.lat = 19.42847;
-        this.lng = -99.12766;
+    constructor() {
     }
-    // Call Observable with Subscribe
-    getMarkers() {
-        this.mapService.getData()
-            .subscribe(markersPoints => this.list = markersPoints);
-    }
-    ngOnInit() {
-        // Initializing mapbox with token
-        mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["accessToken"] = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].mapbox.accessToken;
-        this.map = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Map"]({
-            container: 'map',
-            style: this.style,
-            zoom: 3,
-            center: [this.lng, this.lat]
-        });
-        // Add map controls
-        this.map.addControl(new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["NavigationControl"]());
-        // Add first marker in MexiciCity
-        let marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Marker"](this.element)
-            .setLngLat({
-            lat: 19.42847,
-            lng: -99.12766
-        })
-            .addTo(this.map);
-    }
-    ngAfterViewInit() {
-        //Call service to print markers
-        let list = this.mapService.getData();
-        console.log("LISTA:", list);
-        list.forEach(element => {
-            let item = element;
-            console.log("ELEMENT:", element);
-            item.forEach(e => {
-                let coordinates = e.Coordinates;
-                let arr = [coordinates.lng, coordinates.lat];
-                // console.log(arr);
-                let name = e.Name;
-                // let address = e.Address;
-                // Option for Markers in map
-                let marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Marker"]({
-                    draggable: true
-                })
-                    .setLngLat(arr)
-                    .addTo(this.map);
-                console.log(arr);
-                // let monument = arr;
-                // let map = new mapboxgl.Map({
-                // container: 'map',
-                // style: 'mapbox://styles/mapbox/light-v10',
-                // center: monument,
-                // zoom: 15
-                // });
-                // // create the popup
-                // let popup = new mapboxgl.Popup({ offset: 25 })
-                // .setText('Construction on the Washington Monument began in 1848.');
-                // // create DOM element for the marker
-                // let el = document.createElement('div');
-                // el.id = 'marker';
-                // // create the marker
-                // new mapboxgl.Marker(el)
-                // .setLngLat(monument)
-                // .setPopup(popup) // sets a popup on this marker
-                // .addTo(map);
-            });
-        });
-    }
+    ngOnInit() { }
 };
-AppComponent.ctorParameters = () => [
-    { type: _services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"] }
-];
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
         template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
-        providers: [_services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"]],
+        providers: [],
         styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
     })
 ], AppComponent);
@@ -189,11 +171,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./map/map.component */ "./src/app/map/map.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_details_details_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/details/details.component */ "./src/app/components/details/details.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 
 
 
 // import { HttpClient } from '@angular/common/http';
 // COMPONENTS
+
+
+
 
 
 let AppModule = class AppModule {
@@ -202,15 +190,103 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-            _map_map_component__WEBPACK_IMPORTED_MODULE_4__["MapComponent"]
+            _map_map_component__WEBPACK_IMPORTED_MODULE_4__["MapComponent"],
+            _components_home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+            _components_details_details_component__WEBPACK_IMPORTED_MODULE_6__["DetailsComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"]
+            // HttpClient
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/details/details.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/components/details/details.component.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGV0YWlscy9kZXRhaWxzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/details/details.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/details/details.component.ts ***!
+  \*********************************************************/
+/*! exports provided: DetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetailsComponent", function() { return DetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let DetailsComponent = class DetailsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+DetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-details',
+        template: __webpack_require__(/*! raw-loader!./details.component.html */ "./node_modules/raw-loader/index.js!./src/app/components/details/details.component.html"),
+        styles: [__webpack_require__(/*! ./details.component.css */ "./src/app/components/details/details.component.css")]
+    })
+], DetailsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/home/home.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/components/home/home.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/home/home.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/home/home.component.ts ***!
+  \***************************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HomeComponent = class HomeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-home',
+        template: __webpack_require__(/*! raw-loader!./home.component.html */ "./node_modules/raw-loader/index.js!./src/app/components/home/home.component.html"),
+        styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/components/home/home.component.css")]
+    })
+], HomeComponent);
 
 
 
@@ -223,7 +299,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: stretch;\n            align-items: stretch;\n}\n\n#sidebar {\n    min-width: 250px;\n    max-width: 250px;\n}\n\n#sidebar.active {\n    margin-left: -250px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFwL21hcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0JBQWE7SUFBYixhQUFhO0lBQ2IsMEJBQW9CO1lBQXBCLG9CQUFvQjtBQUN4Qjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxtQkFBbUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC9tYXAvbWFwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogc3RyZXRjaDtcbn1cblxuI3NpZGViYXIge1xuICAgIG1pbi13aWR0aDogMjUwcHg7XG4gICAgbWF4LXdpZHRoOiAyNTBweDtcbn1cblxuI3NpZGViYXIuYWN0aXZlIHtcbiAgICBtYXJnaW4tbGVmdDogLTI1MHB4O1xufSJdfQ== */"
+module.exports = "/* .wrapper {\n    display: flex;\n    align-items: stretch;\n}\n\n#sidebar {\n    min-width: 250px;\n    max-width: 250px;\n}\n\n#sidebar.active {\n    margin-left: -250px;\n} */\n.body {\n    height: 100%;\n}\n.match-parent {\n    width: 100%;\n    height: 1000px;\n    /* display: flow-root; */\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n/* .coordinates {\n    background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n    cursor: pointer;\n} */\n.title {\n    /* display: flex; */\n    -webkit-box-align: left;\n            align-items: left;\n    -webkit-box-pack: left;\n            justify-content: left;\n}\n/* #marker {\n    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');\n    background-size: cover;\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n    cursor: pointer;\n    } */\n.mapboxgl-popup {\n    max-width: 200px;\n    }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFwL21hcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7R0FZRztBQUNIO0lBQ0ksWUFBWTtBQUNoQjtBQUVBO0lBQ0ksV0FBVztJQUNYLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2Qix5QkFBbUI7WUFBbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7Ozs7Ozs7R0FPRztBQUNIO0lBQ0ksbUJBQW1CO0lBQ25CLHVCQUFpQjtZQUFqQixpQkFBaUI7SUFDakIsc0JBQXFCO1lBQXJCLHFCQUFxQjtBQUN6QjtBQUNBOzs7Ozs7O09BT087QUFFSDtJQUNBLGdCQUFnQjtJQUNoQiIsImZpbGUiOiJzcmMvYXBwL21hcC9tYXAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIC53cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBzdHJldGNoO1xufVxuXG4jc2lkZWJhciB7XG4gICAgbWluLXdpZHRoOiAyNTBweDtcbiAgICBtYXgtd2lkdGg6IDI1MHB4O1xufVxuXG4jc2lkZWJhci5hY3RpdmUge1xuICAgIG1hcmdpbi1sZWZ0OiAtMjUwcHg7XG59ICovXG4uYm9keSB7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ubWF0Y2gtcGFyZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMDBweDtcbiAgICAvKiBkaXNwbGF5OiBmbG93LXJvb3Q7ICovXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi8qIC5jb29yZGluYXRlcyB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0dHBzOi8vaS5pYmIuY28veXB5aDJSYi9jaGluY2gucG5nKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSAqL1xuLnRpdGxlIHtcbiAgICAvKiBkaXNwbGF5OiBmbGV4OyAqL1xuICAgIGFsaWduLWl0ZW1zOiBsZWZ0O1xuICAgIGp1c3RpZnktY29udGVudDogbGVmdDtcbn1cbi8qICNtYXJrZXIge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9kb2NzLm1hcGJveC5jb20vbWFwYm94LWdsLWpzL2Fzc2V0cy93YXNoaW5ndG9uLW1vbnVtZW50LmpwZycpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDUwcHg7XG4gICAgaGVpZ2h0OiA1MHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgfSAqL1xuICAgICBcbiAgICAubWFwYm94Z2wtcG9wdXAge1xuICAgIG1heC13aWR0aDogMjAwcHg7XG4gICAgfSJdfQ== */"
 
 /***/ }),
 
@@ -238,40 +314,103 @@ module.exports = ".wrapper {\n    display: -webkit-box;\n    display: flex;\n   
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapComponent", function() { return MapComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../services/map.service */ "./src/services/map.service.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mapbox-gl */ "./node_modules/mapbox-gl/dist/mapbox-gl.js");
-/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mapbox-gl */ "./node_modules/mapbox-gl/dist/mapbox-gl.js");
+/* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/map.service */ "./src/services/map.service.ts");
 
 
 
+// MapBox
 
+// Service
 
 let MapComponent = class MapComponent {
-    constructor() {
+    constructor(mapService) {
+        this.mapService = mapService;
+        // @ViewChild('coordinadas') coordinadas: ElementRef;
+        // Title app
+        this.title = 'Uber';
         this.style = 'mapbox://styles/mapbox/streets-v11';
-        // Position initial
-        this.lat = 19.42847;
-        this.lng = -99.12766;
+        // Position initial SantiagoCity
+        this.lat = -33.4372;
+        this.lng = -70.6506;
+    }
+    // Call Observable with Subscribe
+    getMarkers() {
+        this.mapService.getData()
+            .subscribe(markersPoints => this.list = markersPoints);
     }
     ngOnInit() {
-        mapbox_gl__WEBPACK_IMPORTED_MODULE_4__["accessToken"] = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].mapbox.accessToken;
-        this.map = new mapbox_gl__WEBPACK_IMPORTED_MODULE_4__["Map"]({
+        // Initializing mapbox with token
+        mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["accessToken"] = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].mapbox.accessToken;
+        this.map = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Map"]({
             container: 'map',
             style: this.style,
-            zoom: 10,
+            zoom: 16,
             center: [this.lng, this.lat]
         });
         // Add map controls
-        this.map.addControl(new mapbox_gl__WEBPACK_IMPORTED_MODULE_4__["NavigationControl"]());
+        this.map.addControl(new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["NavigationControl"]());
+        // Add first marker in SantiagoCity
+        let marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Marker"](this.element)
+            .setLngLat({
+            lat: -33.4372,
+            lng: -70.6506,
+        })
+            .addTo(this.map);
+    }
+    ngAfterViewInit() {
+        //Call service to print markers
+        // let list = this.mapService.getData();
+        // console.log("LISTA:", list);
+        // list.forEach(element => {
+        //   let item = element;
+        //   console.log("ELEMENT:", element);
+        //   item.forEach(e => {
+        //     let coordinates = e.Coordinates;  
+        //     let arr:[number, number] = [coordinates.lng, coordinates.lat]
+        // console.log(arr);
+        // let name = e.Name;
+        // let address = e.Address;
+        // Option for Markers in map
+        // let marker = new mapboxgl.Marker({
+        //   draggable: true  
+        // })
+        // .setLngLat(arr) 
+        // .addTo(this.map);
+        // console.log(arr);
+        // let monument = arr;
+        // let map = new mapboxgl.Map({
+        // container: 'map',
+        // style: 'mapbox://styles/mapbox/light-v10',
+        // center: monument,
+        // zoom: 15
+        // });
+        // create the popup
+        // let popup = new mapboxgl.Popup({ offset: 25 })
+        // .setText('Construction on the Washington Monument began in 1848.');
+        // // create DOM element for the marker
+        // let el = document.createElement('div');
+        // el.id = 'marker';
+        // // create the marker
+        // new mapboxgl.Marker(el)
+        // .setLngLat(monument)
+        // .setPopup(popup) // sets a popup on this marker
+        // .addTo(map);
+        // });
+        // });
     }
 };
+MapComponent.ctorParameters = () => [
+    { type: _services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"] }
+];
 MapComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-map',
         template: __webpack_require__(/*! raw-loader!./map.component.html */ "./node_modules/raw-loader/index.js!./src/app/map/map.component.html"),
-        providers: [_services_map_service__WEBPACK_IMPORTED_MODULE_1__["MapService"]],
+        providers: [_services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"]],
         styles: [__webpack_require__(/*! ./map.component.css */ "./src/app/map/map.component.css")]
     })
 ], MapComponent);
@@ -2507,7 +2646,8 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
     production: true,
     mapbox: {
-        accessToken: 'pk.eyJ1IjoiZ2FiYTI4MDEiLCJhIjoiY2p6Y3p5aXd3MDA1MDNjcHI1Z3o1MnVmZCJ9.nDIUvESnqMoNiXZwoqB3LQ'
+        accessToken: 'pk.eyJ1IjoiZ2FiYTI4MDEiLCJhIjoiY2sxOHJrOXlrMXRqazNsdGo4anlkZWg0NiJ9.jLrlKOQb1A9JDdZniLHDBg'
+        // pk.eyJ1IjoiZ2FiYTI4MDEiLCJhIjoiY2p6Y3p5aXd3MDA1MDNjcHI1Z3o1MnVmZCJ9.nDIUvESnqMoNiXZwoqB3LQ' 
     }
 };
 /*
