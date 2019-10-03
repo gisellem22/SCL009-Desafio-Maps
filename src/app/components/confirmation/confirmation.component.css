@@ -1,0 +1,11 @@
+.info {
+    text-align: center;
+    font-size: 14px;
+}
+.btn {
+    background-color: black;
+    padding: 10px 50px;
+    color: white;
+    font-weight:bold;
+    text-align: center;
+}

@@ -7,6 +7,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { ProgramComponent } from './components/program/program.component';
 import  {InfoComponent } from './components/info/info.component';
 import { DirectionComponent } from './components/direction/direction.component';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 
 const appRoutes: Routes = [
   { path: 'map', component: MapComponent },
@@ -15,6 +16,7 @@ const appRoutes: Routes = [
   { path: 'program', component: ProgramComponent },
   { path: 'direction', component: DirectionComponent },
   { path: 'details', component: DetailsComponent },
+  { path: 'confirmation', component: ConfirmationComponent },
 
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: MapComponent },
