@@ -4,7 +4,7 @@
 
 .match-parent {
     width: 100%;
-    height: 1000px;
+    height: 300px;
     /* display: flow-root; */
     justify-content: center;
     align-items: center;
@@ -12,10 +12,14 @@
 
 .title {
     /* display: flex; */
-    align-items: left;
-    justify-content: left;
+    float: left;
 }
      
+@media (max-width:320px){
+   .match-parent {
+    height: 230px;
+}
+}
 @media (max-width:360px){
     .match-parent {
         height: 260px;
@@ -26,3 +30,4 @@
         height: 260px;
     }
 }
+

@@ -1,0 +1,14 @@
+.welcome {
+    border-bottom: 3px solid #dee2e6!important;
+    text-align: center;
+    font-size: 14px;
+}
+.form-control {
+    border: none;
+    background-color: #EDEDED;
+    font-size: 14px;
+    font-weight: bold;
+}
+.border-left {
+border-left: 1px solid #000000!important;
+}
