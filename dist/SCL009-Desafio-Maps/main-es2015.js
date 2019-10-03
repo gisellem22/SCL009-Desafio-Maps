@@ -41,7 +41,7 @@ module.exports = "<!-- NavBar Style Bootstrap -->\n<!-- <nav class=\"navbar navb
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>details works!</p>\n"
+module.exports = "<app-map></app-map>\n<section>\n    <div class=\"row\">\n        <div class=\"col-12 col-sm-6 col-md-6\">\n            <div class=\"info my-1 mx-0\">\n                <p class=\"font-weight\">Elige un viaje</p>\n            </div>\n            <div class=\"select-card mt-0\">\n                <div class=\"row no-gutters\">\n                    <div class=\"col-auto\">\n                        <img src=\"https://i.ibb.co/Cpyszjz/car2.png\" class=\"card-img ml-2\" alt=\"img car blue\">\n                    </div>\n                    <div class=\"col-4\">\n                        <div class=\"card-body\">\n                            <span class=\"card-text\">UberX</span>\n                            <p class=\"font-weight\">Llegada 08:00</p>\n                        </div>\n                    </div>\n                    <div class=\"col-4\">\n                        <div class=\"card-body\">\n                            <p class=\"card-text float-right\">CLP6.071</p>\n                        </div>\n                    </div>\n                </div>    \n            </div>\n            <div class=\"card mt-0\">\n                <div class=\"row no-gutters\">\n                    <div class=\"col-auto\">\n                        <img src=\"https://i.ibb.co/D7Bk8w5/car1.png\" class=\"card-img ml-2\" alt=\"img car yellow\">\n                    </div>\n                    <div class=\"col-4\">\n                            <div class=\"card-body\">\n                                <span class=\"card-text\">UberX</span>\n                                <p class=\"font-weight\">08:00</p>\n                            </div>\n                        </div>\n                        <div class=\"col-4\">\n                            <div class=\"card-body\">\n                                <p class=\"card-text float-right\">CLP6.071</p>\n                            </div>\n                        </div>\n                </div>\n            </div>\n            <div class=\"card mt-0\">\n                <div class=\"row no-gutters\">\n                    <div class=\"col-4 mr-5\">\n                        <img src=\"https://i.ibb.co/19HJqyL/visa.png\" class=\"card2-img float-left ml-2\" alt=\"img visa card\">\n                    </div>\n                    <div class=\"col-4 ml-5\">\n                        <img src=\"https://i.ibb.co/PYWR47D/sumate.png\" class=\"card2-img float-right ml-2\" alt=\"img go green\">       \n                </div>\n            </div>\n            </div>\n            <div>\n                <button class=\"gt ck ak ef gu gv gw f7 cq gx btn ml-2 mt-2\">\n                    <h6 class=\"m-2\">CONFIRMAR UBERX</h6> \n                </button>\n                <img src=\"https://i.ibb.co/NpFtt8w/travel.png\" class=\"card-img float-right mt-1 mr-2\" alt=\"timer car\">\n            </div>\n        </div>\n    </div>\n</section>"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<p>details works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-map></app-map>\n"
+module.exports = "<div class=\"map\">\n        <app-map></app-map>\n</div>\n<section>\n    <div>\n        <div class=\"welcome my-3 mx-0\">\n            <p class=\"font-weight-bold\">Buenas tardes, Maria</p>\n        </div>\n        <form>\n            <div>\n                <div class=\"row justify-content-center m-0 p-0\">\n                    <div class=\"form-group col-6 col-sm-6 col-md-6 col-lg-6 p-0\" style=\"background-color: #EDEDED\">\n                            <input type=\"text\" class=\"form-control rounded-0 mt-2  mb-2\" placeholder=\"¿A dónde vas?\">\n                        </div> \n                        <div class=\"form-group col-4 col-sm-4 col-md-4 col-lg-4 p-0\" style=\"background-color: #EDEDED\">\n                                <input type=\"text\" class=\"form-control border-left rounded-0 mt-2  mb-2\" placeholder=\"Programar\">\n                            </div> \n                    </div>\n                    <div class=\"direction-containers mx-4 my-2 pb-3 border-bottom\" (click)=\"uberGo('puma')\">\n                            <img src=\"../../../assets/img/Direction/Dirección Puma.png\" class=\"img-fluid\">\n                    </div>\n                    <div class=\"direction-containers mx-4 my-2 py-2\" (click)=\"uberGo('apoquindo')\">\n                            <img src=\"../../../assets/img/Direction/Dirección Apoquindo.png\" class=\"img-fluid\">\n                    </div>\n                </div>\n                </form>\n        </div>\n</section>"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<app-map></app-map>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-light bg-light col-12\">\n    <img style=\"float:left\" width=\"70\" src=\"https://i.ibb.co/XfnWSkF/uber.png\" alt=\"g logo\">\n    <div class=\"title\">\n      <h1 class=\"\"> {{ title }} </h1>\n    </div>\n    <!-- <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n    <a routerLink=\"/details\" routerLinkActive=\"active\">details</a> -->\n    Form other options \n    <form class=\"form-inline\">\n        <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>-->\n        <!--<button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/details\" routerLinkActive=\"active\" type=\"button\"><h3>Details</h3></button> -->\n    </form>\n  </nav>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 p-0\">\n        <div id=\"map\" class=\"match-parent col-12 p-0\">\n            <div #Coordinadas id='coordinates' class='' *ngFor=\"let m of markers\">\n              {{markers}}\n            </div>\n         <!-- <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" (click)=\"onSelect(m)\"> {{m.lat}}{{m.lng}} </div> -->\n               <!-- <ul> -->\n                <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n                <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n                [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n                (click)=\"onSelect(Markers.Coordinates)\">\n                [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n                </div> -->\n            <!-- </ul> -->\n        </div>\n      </div>\n    </div>\n  </div>\n  <router-outlet></router-outlet>\n  \n  \n  \n  "
+module.exports = "<!-- NavBar Style Bootstrap -->\n<nav class=\"navbar navbar-light bg-light col-12\">\n    <div class=\"row\">\n<div class=\"col m-0\">\n        <img width=\"40px\" src=\"https://i.ibb.co/XfnWSkF/uber.png\" alt=\"g logo\">\n</div>\n<div class=\"col m-0\">\n        <h3 class=\"title\"> {{ title }} </h3>\n</div>\n    </div>\n    <!-- <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n    <a routerLink=\"/details\" routerLinkActive=\"active\">details</a> -->\n    <!-- Form other options  -->\n    <form class=\"form-inline\">\n        <!-- <button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/home\" routerLinkActive=\"active\" type=\"button\"><h3>Home</h3></button>-->\n        <!--<button class=\"btn btn-sm btn-outline-bg-light\" routerLink=\"/details\" routerLinkActive=\"active\" type=\"button\"><h3>Details</h3></button> -->\n    </form>\n  </nav>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-12 p-0\">\n        <div id=\"map\" class=\"match-parent col-12 p-0\">\n            <div #Coordinadas id='coordinates' class='' *ngFor=\"let m of markers\">\n              {{markers}}\n            </div>\n         <!-- <div id=\"marker\" class=\"marker\" *ngFor=\"let m of markers\" (click)=\"onSelect(m)\"> {{m.lat}}{{m.lng}} </div> -->\n               <!-- <ul> -->\n                <!-- {{Markers.Name}}<br>{{Coordinates.Address}} -->\n                <!-- <div *ngFor=\"let m of markers; let i = index\"(click)=\"onSelect(m, i)\"\n                [lat]=\"m.lat\" [lng]=\"m.lng\"[markerDraggable]=\"m.arrastrable\"\n                (click)=\"onSelect(Markers.Coordinates)\">\n                [Coordinates.lat]=\"item.lat\" [Coordinates.long]=\"item.lng\"\n                </div> -->\n            <!-- </ul> -->\n        </div>\n      </div>\n    </div>\n  </div>\n  \n  \n  \n  \n  "
 
 /***/ }),
 
@@ -215,7 +215,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGV0YWlscy9kZXRhaWxzLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = ".card {\n    padding: 3px 0 3px 0;\n\n}\n.select-card {\n    padding: 3px 0 3px 0;\n    background-color: #EDEDED; \n\n}\n.card-body {\n    padding: 0 0 0 1px;\n    \n}\n.card-body > .card-text {\n    margin-bottom: 0;\n    text-align: left;\n    font-size: 18px;\n    font-weight:bold\n}\n.card-img {\n    max-width: 4em;\n}\n.card1-img {\n    max-width: 4em;\n    /* text-align: right; */\n}\n.card2-img {\n    max-width: 9em;\n    /* text-align: right; */\n}\n.info {\n    text-align: center;\n    font-size: 14px;\n}\n.btn {\n    background-color: black;\n    padding: 7px 29px;\n    color: white;\n    font-weight:bold;\n    text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9kZXRhaWxzL2RldGFpbHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9CQUFvQjs7QUFFeEI7QUFDQTtJQUNJLG9CQUFvQjtJQUNwQix5QkFBeUI7O0FBRTdCO0FBQ0E7SUFDSSxrQkFBa0I7O0FBRXRCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZjtBQUNKO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxjQUFjO0lBQ2QsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxjQUFjO0lBQ2QsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGV0YWlscy9kZXRhaWxzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZCB7XG4gICAgcGFkZGluZzogM3B4IDAgM3B4IDA7XG5cbn1cbi5zZWxlY3QtY2FyZCB7XG4gICAgcGFkZGluZzogM3B4IDAgM3B4IDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0VERURFRDsgXG5cbn1cbi5jYXJkLWJvZHkge1xuICAgIHBhZGRpbmc6IDAgMCAwIDFweDtcbiAgICBcbn1cbi5jYXJkLWJvZHkgPiAuY2FyZC10ZXh0IHtcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtd2VpZ2h0OmJvbGRcbn1cbiBcbi5jYXJkLWltZyB7XG4gICAgbWF4LXdpZHRoOiA0ZW07XG59XG4uY2FyZDEtaW1nIHtcbiAgICBtYXgtd2lkdGg6IDRlbTtcbiAgICAvKiB0ZXh0LWFsaWduOiByaWdodDsgKi9cbn1cbi5jYXJkMi1pbWcge1xuICAgIG1heC13aWR0aDogOWVtO1xuICAgIC8qIHRleHQtYWxpZ246IHJpZ2h0OyAqL1xufVxuLmluZm8ge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDE0cHg7XG59XG4uYnRuIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgICBwYWRkaW5nOiA3cHggMjlweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC13ZWlnaHQ6Ym9sZDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59Il19 */"
 
 /***/ }),
 
@@ -257,7 +257,7 @@ DetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = ".welcome {\n    border-bottom: 3px solid #dee2e6!important;\n    text-align: center;\n    font-size: 14px;\n}\n.form-control {\n    border: none;\n    background-color: #EDEDED;\n    font-size: 14px;\n    font-weight: bold;\n}\n.border-left {\nborder-left: 1px solid #000000!important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ob21lL2hvbWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLDBDQUEwQztJQUMxQyxrQkFBa0I7SUFDbEIsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksWUFBWTtJQUNaLHlCQUF5QjtJQUN6QixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBQ0E7QUFDQSx3Q0FBd0M7QUFDeEMiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLndlbGNvbWUge1xuICAgIGJvcmRlci1ib3R0b206IDNweCBzb2xpZCAjZGVlMmU2IWltcG9ydGFudDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAxNHB4O1xufVxuLmZvcm0tY29udHJvbCB7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFREVERUQ7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuLmJvcmRlci1sZWZ0IHtcbmJvcmRlci1sZWZ0OiAxcHggc29saWQgIzAwMDAwMCFpbXBvcnRhbnQ7XG59Il19 */"
 
 /***/ }),
 
@@ -273,13 +273,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_services_destination_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/destination.service */ "./src/app/services/destination.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
 
 
 let HomeComponent = class HomeComponent {
-    constructor() { }
+    constructor(destinationService, router) {
+        this.destinationService = destinationService;
+        this.router = router;
+    }
     ngOnInit() {
     }
+    uberGo(direction) {
+        console.log(direction);
+        this.destinationService.getDestination(direction);
+        this.router.navigate(['/details']);
+    }
 };
+HomeComponent.ctorParameters = () => [
+    { type: src_app_services_destination_service__WEBPACK_IMPORTED_MODULE_2__["DestinationService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+];
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-home',
@@ -299,7 +315,7 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* .wrapper {\n    display: flex;\n    align-items: stretch;\n}\n\n#sidebar {\n    min-width: 250px;\n    max-width: 250px;\n}\n\n#sidebar.active {\n    margin-left: -250px;\n} */\n.body {\n    height: 100%;\n}\n.match-parent {\n    width: 100%;\n    height: 1000px;\n    /* display: flow-root; */\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n/* .coordinates {\n    background-image: url(https://i.ibb.co/ypyh2Rb/chinch.png);\n    background-size: cover;\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n    cursor: pointer;\n} */\n.title {\n    /* display: flex; */\n    -webkit-box-align: left;\n            align-items: left;\n    -webkit-box-pack: left;\n            justify-content: left;\n}\n/* #marker {\n    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');\n    background-size: cover;\n    width: 50px;\n    height: 50px;\n    border-radius: 50%;\n    cursor: pointer;\n    } */\n.mapboxgl-popup {\n    max-width: 200px;\n    }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFwL21hcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7R0FZRztBQUNIO0lBQ0ksWUFBWTtBQUNoQjtBQUVBO0lBQ0ksV0FBVztJQUNYLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2Qix5QkFBbUI7WUFBbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7Ozs7Ozs7R0FPRztBQUNIO0lBQ0ksbUJBQW1CO0lBQ25CLHVCQUFpQjtZQUFqQixpQkFBaUI7SUFDakIsc0JBQXFCO1lBQXJCLHFCQUFxQjtBQUN6QjtBQUNBOzs7Ozs7O09BT087QUFFSDtJQUNBLGdCQUFnQjtJQUNoQiIsImZpbGUiOiJzcmMvYXBwL21hcC9tYXAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIC53cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBzdHJldGNoO1xufVxuXG4jc2lkZWJhciB7XG4gICAgbWluLXdpZHRoOiAyNTBweDtcbiAgICBtYXgtd2lkdGg6IDI1MHB4O1xufVxuXG4jc2lkZWJhci5hY3RpdmUge1xuICAgIG1hcmdpbi1sZWZ0OiAtMjUwcHg7XG59ICovXG4uYm9keSB7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ubWF0Y2gtcGFyZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMDBweDtcbiAgICAvKiBkaXNwbGF5OiBmbG93LXJvb3Q7ICovXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi8qIC5jb29yZGluYXRlcyB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0dHBzOi8vaS5pYmIuY28veXB5aDJSYi9jaGluY2gucG5nKTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSAqL1xuLnRpdGxlIHtcbiAgICAvKiBkaXNwbGF5OiBmbGV4OyAqL1xuICAgIGFsaWduLWl0ZW1zOiBsZWZ0O1xuICAgIGp1c3RpZnktY29udGVudDogbGVmdDtcbn1cbi8qICNtYXJrZXIge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnaHR0cHM6Ly9kb2NzLm1hcGJveC5jb20vbWFwYm94LWdsLWpzL2Fzc2V0cy93YXNoaW5ndG9uLW1vbnVtZW50LmpwZycpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDUwcHg7XG4gICAgaGVpZ2h0OiA1MHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgfSAqL1xuICAgICBcbiAgICAubWFwYm94Z2wtcG9wdXAge1xuICAgIG1heC13aWR0aDogMjAwcHg7XG4gICAgfSJdfQ== */"
+module.exports = ".body {\n    height: 100%;\n}\n\n.match-parent {\n    width: 100%;\n    height: 300px;\n    /* display: flow-root; */\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n}\n\n.title {\n    /* display: flex; */\n    float: left;\n}\n\n@media (max-width:320px){\n   .match-parent {\n    height: 230px;\n}\n}\n\n@media (max-width:360px){\n    .match-parent {\n        height: 260px;\n    }\n}\n\n@media (max-width:411px){\n    .match-parent {\n        height: 260px;\n    }\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFwL21hcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2Isd0JBQXdCO0lBQ3hCLHdCQUF1QjtZQUF2Qix1QkFBdUI7SUFDdkIseUJBQW1CO1lBQW5CLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixXQUFXO0FBQ2Y7O0FBRUE7R0FDRztJQUNDLGFBQWE7QUFDakI7QUFDQTs7QUFDQTtJQUNJO1FBQ0ksYUFBYTtJQUNqQjtBQUNKOztBQUNBO0lBQ0k7UUFDSSxhQUFhO0lBQ2pCO0FBQ0oiLCJmaWxlIjoic3JjL2FwcC9tYXAvbWFwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYm9keSB7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ubWF0Y2gtcGFyZW50IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDMwMHB4O1xuICAgIC8qIGRpc3BsYXk6IGZsb3ctcm9vdDsgKi9cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4udGl0bGUge1xuICAgIC8qIGRpc3BsYXk6IGZsZXg7ICovXG4gICAgZmxvYXQ6IGxlZnQ7XG59XG4gICAgIFxuQG1lZGlhIChtYXgtd2lkdGg6MzIwcHgpe1xuICAgLm1hdGNoLXBhcmVudCB7XG4gICAgaGVpZ2h0OiAyMzBweDtcbn1cbn1cbkBtZWRpYSAobWF4LXdpZHRoOjM2MHB4KXtcbiAgICAubWF0Y2gtcGFyZW50IHtcbiAgICAgICAgaGVpZ2h0OiAyNjBweDtcbiAgICB9XG59XG5AbWVkaWEgKG1heC13aWR0aDo0MTFweCl7XG4gICAgLm1hdGNoLXBhcmVudCB7XG4gICAgICAgIGhlaWdodDogMjYwcHg7XG4gICAgfVxufVxuXG4iXX0= */"
 
 /***/ }),
 
@@ -334,8 +350,8 @@ let MapComponent = class MapComponent {
         this.title = 'Uber';
         this.style = 'mapbox://styles/mapbox/streets-v11';
         // Position initial SantiagoCity
-        this.lat = -33.4372;
-        this.lng = -70.6506;
+        this.lat = -33.4190702;
+        this.lng = -70.6418162;
     }
     // Call Observable with Subscribe
     getMarkers() {
@@ -356,8 +372,8 @@ let MapComponent = class MapComponent {
         // Add first marker in SantiagoCity
         let marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_3__["Marker"](this.element)
             .setLngLat({
-            lat: -33.4372,
-            lng: -70.6506,
+            lat: -33.4190702,
+            lng: -70.6418162,
         })
             .addTo(this.map);
     }
@@ -414,6 +430,42 @@ MapComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./map.component.css */ "./src/app/map/map.component.css")]
     })
 ], MapComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/destination.service.ts":
+/*!*************************************************!*\
+  !*** ./src/app/services/destination.service.ts ***!
+  \*************************************************/
+/*! exports provided: DestinationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DestinationService", function() { return DestinationService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
+let DestinationService = class DestinationService {
+    constructor() {
+        this.getDestinationSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+        this.getDestinationObservable = this.getDestinationSubject.asObservable();
+    }
+    getDestination(direction) {
+        this.destination = direction;
+        this.getDestinationSubject.next(direction);
+    }
+};
+DestinationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], DestinationService);
 
 
 

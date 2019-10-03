@@ -22,7 +22,7 @@
 }
 @media (max-width:360px){
     .match-parent {
-        height: 260px;
+        height: 300px;
     }
 }
 @media (max-width:411px){
