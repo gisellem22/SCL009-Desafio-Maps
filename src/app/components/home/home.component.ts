@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DestinationService } from 'src/app/services/destination.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -11,14 +10,12 @@ export class HomeComponent implements OnInit {
 
 
 
-  constructor(private destinationService: DestinationService, private router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  uberGo(direction:string) {
-    console.log(direction)
-    this.destinationService.getDestination(direction);
-    this.router.navigate(['/details']);
+getInfo() {
+    this.router.navigate(['/info']);
   }
 }

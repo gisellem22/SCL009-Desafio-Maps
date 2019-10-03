@@ -9,13 +9,19 @@ import { HomeComponent } from './components/home/home.component';
 import { DetailsComponent } from './components/details/details.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ProgramComponent } from './components/program/program.component';
+import { InfoComponent } from './components/info/info.component';
+import { DirectionComponent } from './components/direction/direction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    ProgramComponent,
+    InfoComponent,
+    DirectionComponent
    
   ],
   imports: [

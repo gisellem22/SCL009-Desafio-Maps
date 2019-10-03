@@ -22,12 +22,12 @@
 }
 @media (max-width:360px){
     .match-parent {
-        height: 260px;
+        height: 360px;
     }
 }
 @media (max-width:411px){
     .match-parent {
-        height: 260px;
+        height: 340px;
     }
 }
 

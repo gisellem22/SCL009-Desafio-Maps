@@ -1,0 +1,24 @@
+<section  class="map">
+        <div>
+                <app-map></app-map>
+        </div>
+    <div>
+        
+        <form data-aos="fade-up"  data-aos-duration="1000">
+                <div class="welcome my-3 mx-0">
+                        <p class="font-weight-bold">Buenas tardes, Maria</p>
+                    </div>
+            <div>
+                    <div class="form-group mx-3 p-0" style="background-color: #EDEDED">
+                            <input type="text" class="form-control rounded-0 mt-2  mb-2" placeholder="Ingresa el punto de partida">
+                    </div>
+                    <div class="direction-containers mx-4 my-2 pb-3 border-bottom" (click)="getDetails('puma')">
+                            <img src="../../../assets/img/Direction/Dirección Puma.png" class="img-fluid">
+                    </div>
+                    <div class="direction-containers mx-4 my-2 py-2" (click)="getDetails('apoquindo')">
+                            <img src="../../../assets/img/Direction/Dirección Apoquindo.png" class="img-fluid">
+                    </div>
+                </div>
+                </form>
+        </div>
+</section>

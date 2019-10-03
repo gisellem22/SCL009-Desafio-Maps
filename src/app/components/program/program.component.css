@@ -1,0 +1,15 @@
+.welcome {
+    border-bottom: 2px solid #dee2e6!important;
+    text-align: center;
+    font-size: 18px;
+}
+.form-control {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.btn-dark {
+    background-color: #000000 !important;
+}
