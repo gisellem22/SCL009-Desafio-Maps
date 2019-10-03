@@ -46,3 +46,9 @@
     .mapboxgl-popup {
     max-width: 200px;
     }
+
+@media (max-width:320px){
+   .match-parent {
+    height: 230px;
+}
+}
