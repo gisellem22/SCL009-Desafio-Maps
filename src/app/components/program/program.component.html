@@ -1,0 +1,23 @@
+<section class="map">
+    <div>
+        <app-map></app-map>
+    </div>
+    <div data-aos="fade-up"  data-aos-duration="1000">
+        <div class="welcome my-4 mx-0">
+            <p class="font-weight-bold">Programar Uber Recycle</p>
+        </div>
+        <form>
+            <div class="welcome my-4 mx-0">
+                <input onfocus="(this.type='date')" class="form-control" (change)="fromDate($event)"
+                    placeholder="vie.,4 oct.">
+            </div>
+            <div class="welcome my-4 mx-0">
+                <input onfocus="(this.type='time')" class="form-control" (change)="fromDate($event)"
+                    placeholder="15:00-15:10">
+            </div>
+        </form>
+        <div class="form-group m-3">
+                <button class="btn btn-dark btn-block rounded-0" type="button" (click)="getDirection()">FIJAR HORA DEL RETIRO</button>
+            </div>
+    </div>
+</section>

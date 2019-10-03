@@ -1,12 +1,16 @@
-<div class="map">
-        <app-map></app-map>
+<div class="recycle-icon mr-5" (click)="getInfo()">
+        <img src="../../../assets/img/icon/icon-recycle.png" width="120px" class="img-fluid">
 </div>
-<section>
-    <div>
-        <div class="welcome my-3 mx-0">
-            <p class="font-weight-bold">Buenas tardes, Maria</p>
+<section  class="map">
+        <div>
+                <app-map></app-map>
         </div>
-        <form>
+    <div>
+        
+        <form data-aos="fade-up"  data-aos-duration="1000">
+                <div class="welcome my-3 mx-0">
+                        <p class="font-weight-bold">Buenas tardes, Maria</p>
+                    </div>
             <div>
                 <div class="row justify-content-center m-0 p-0">
                     <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 p-0" style="background-color: #EDEDED">
@@ -16,10 +20,10 @@
                                 <input type="text" class="form-control border-left rounded-0 mt-2  mb-2" placeholder="Programar">
                             </div> 
                     </div>
-                    <div class="direction-containers mx-4 my-2 pb-3 border-bottom" (click)="uberGo('puma')">
+                    <div class="direction-containers mx-4 my-2 pb-3 border-bottom">
                             <img src="../../../assets/img/Direction/Dirección Puma.png" class="img-fluid">
                     </div>
-                    <div class="direction-containers mx-4 my-2 py-2" (click)="uberGo('apoquindo')">
+                    <div class="direction-containers mx-4 my-2 py-2">
                             <img src="../../../assets/img/Direction/Dirección Apoquindo.png" class="img-fluid">
                     </div>
                 </div>

@@ -12,3 +12,14 @@
 .border-left {
 border-left: 1px solid #000000!important;
 }
+.recycle-icon {
+    display: block;
+    float: right;  
+    z-index: 3;
+    position: absolute; /*newly added*/
+    right: 5px; /*newly added*/
+    top: 25px;/*newly added*/
+}
+.map {
+ position: fixed;
+}
