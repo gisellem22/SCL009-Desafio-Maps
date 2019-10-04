@@ -15,19 +15,14 @@
     float: left;
 }
      
-@media (max-width:320px){
-   .match-parent {
-    height: 230px;
-}
-}
-@media (max-width:360px){
-    .match-parent {
-        height: 360px;
-    }
-}
-@media (max-width:411px){
+@media screen and (min-width:230px) and (max-width:765px){
     .match-parent {
         height: 340px;
+    }
+}
+@media (max-width:320px){
+    .match-parent {
+        height: 280px;
     }
 }
 

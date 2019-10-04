@@ -3,7 +3,6 @@
 
 }
 .select-card {
-    padding: 1px 0 1px 0;
     background-color: #EDEDED; 
 
 }
@@ -19,7 +18,7 @@
 }
  
 .card-img {
-    max-width: 50px;
+    max-width: 40px;
 }
 .card1-img {
     max-width: 4em;
@@ -35,7 +34,6 @@
 }
 .btn {
     background-color: black;
-    padding: 7px 35px;
     color: white;
     font-weight:bold;
     text-align: center;
