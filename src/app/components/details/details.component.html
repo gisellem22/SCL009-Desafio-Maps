@@ -33,7 +33,12 @@
                 <a routerLink="/home" routerLinkActive="active">    
                     <button class="btn ml-5 mt-2">
                         <h6 class="m-0">PROGRAMAR UBER RECYCLE</h6>
+                        <div *ngIf= "time">
                         <p class="m-0">vie., oct.25, {{time}} </p>
+                        </div>
+                        <div *ngIf= "time === undefined">
+                                <p class="m-0" >vie., oct.25, 15:00 </p>
+                        </div>
                     </button>
                 </a>
             </div>
