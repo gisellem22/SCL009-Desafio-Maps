@@ -24,7 +24,6 @@ export class ProgramComponent implements OnInit {
   getDirection() {
     this.destinationService.getDate(this.initialDate);
     this.destinationService.getTime(this.initialTime);
-    console.log(this.initialDate, this.initialTime)
     this.router.navigate(['/direction']);
   }
 }
